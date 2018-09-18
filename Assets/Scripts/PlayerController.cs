@@ -15,17 +15,23 @@ public class PlayerController : MonoBehaviour {
 	void Start () {
 		controller = GetComponent<CharacterController>();
 		moveSpeed = 10;
-		jumpForce = 200;
-		gravityScale = 0.75f;
+		jumpForce = 15;
+		gravityScale = 5f;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, 0f, Input.GetAxis("Vertical") * moveSpeed);
-		if(Input.GetButtonDown("Jump")) {
-			moveDirection.y = jumpForce;
+		moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
+		// jump logic
+		if(controller.isGrounded) {
+			if(Input.GetButtonDown("Jump")) {
+				moveDirection.y = jumpForce;
+			} else {
+				// fall off ledges smoothly
+				moveDirection.y -= Physics.gravity.y * Time.deltaTime * gravityScale;
+			}
 		}
-		moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale);
+		moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
 		controller.Move(moveDirection * Time.deltaTime);
 	}
 }
