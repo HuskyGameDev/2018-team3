@@ -21,17 +21,26 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		moveDirection = new Vector3(Input.GetAxis("Horizontal") * moveSpeed, moveDirection.y, Input.GetAxis("Vertical") * moveSpeed);
+		// set movement
+		//NOTE: Use GetAxisRaw to remove "sliding" after movement
+		float prevY = moveDirection.y; // store y value temp
+		moveDirection = (transform.forward * Input.GetAxis("Vertical")) + 
+				(transform.right * Input.GetAxis("Horizontal"));
+		moveDirection = moveDirection.normalized * moveSpeed;
+		moveDirection.y = prevY;
+
 		// jump logic
 		if(controller.isGrounded) {
+			moveDirection.y = 0f;
 			if(Input.GetButtonDown("Jump")) {
 				moveDirection.y = jumpForce;
-			} else {
-				// fall off ledges smoothly
-				moveDirection.y -= Physics.gravity.y * Time.deltaTime * gravityScale;
 			}
 		}
+
+		// apply gravity
 		moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
+
+		// apply movement
 		controller.Move(moveDirection * Time.deltaTime);
 	}
 }
