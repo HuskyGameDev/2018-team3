@@ -3,7 +3,7 @@
 Revision 1.0.0
 By **TEAM HIGHGROUND**
 
-![](team_logo.png)
+![](teamlogo.png)
 
 _This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” Stanley and Alec Markarian._
 
