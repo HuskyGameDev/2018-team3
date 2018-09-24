@@ -7,7 +7,7 @@ Last Updated: 09/23/2018
 
 ![](teamlogo.png)
 
-_This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” Stanley and Alec Markarian._
+_This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” Stanley and Alec Markarian [found here](https://docs.google.com/document/d/1-I08qX76DgSFyN1ByIGtPuqXh7bVKraHcNIA25tpAzE/edit#heading=h.6pmf08ssy6y0)._
 
 - [Temple of the Sun](#temple-of-the-sun)
   - [Overview](#overview)
@@ -96,6 +96,10 @@ _This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” S
       - Programming
       - Level Design
   - Sound Team
+- Software and Tools
+  - Unity Personal Edition (free)
+  - GitHub (for both SCM and Issue/Project management)
+  - Slack (for team communication)
 
 ### Influences (Brief)
 
@@ -104,7 +108,7 @@ _This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” S
   - This was the 3D platformer that defined the genre. For the time, the game was innovative and helped set the foundation for 3D platformers by showing how to run and jump in a 3D space while still completing objectives but with simplistic controls and a bare story. We will be using the core mechanics of Mario, running and jumping.
 - Conker’s Bad Fur Day
   - Nintendo 64 Game, released in March 2001
-  - This was a 3D platformer that followed the traditional collectathon formula but add adult humor and graphic violence to the game. This showed that 3D platformers should have their own identity when following the standards of a 3D collectathon platformer. We are creating a story with humorous elements.
+  - This was a 3D platformer that followed the traditional collect-a-thon formula but add adult humor and graphic violence to the game. This showed that 3D platformers should have their own identity when following the standards of a 3D collect-a-thon platformer. We are creating a story with humorous elements.
 - Banjo Kazooie
   - Nintendo 64 Game, released in 1998
   - This game introduced a zany and lovable mascot that people still remember to this day. It was a wacky platformer that showed memorable characters and solid gameplay for the 3D platformer genre. We are going to create a wacky character to star in our platformer.
@@ -119,15 +123,17 @@ _This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” S
   - We are basing the level design off of Celeste, each level will have its own unique feel.
 - 1001 Spikes
   - PC Game, released in June 2014
-  - We will be using some of the art styles from this game as inspiration, particularly the aztec/jungle themes. We will also be drawing inspiration from the storyline, as a character is searching for something through the jungle.
+  - We will be using some of the art styles from this game as inspiration, particularly the Aztec/jungle themes. We will also be drawing inspiration from the storyline, as a character is searching for something through the jungle.
 
 ### The Elevator Pitch
 
-Temple of the Sun is a 3D platformer, styled similarly to games of the N64 era, where the main character is adventuring through the aztec jungle in search of hidden treasure, all the while being challenged by his rival.
+Temple of the Sun is a 3D platformer, styled similarly to games of the N64 era, where the main character is adventuring through the Aztec jungle in search of hidden treasure, all the while being challenged by his rival.
 
 ### Project Description (Brief)
 
-The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. The game’s main protagonist will be a Tiger named Reggie who is an explorer. The game’s main antagonist will be a Fox named Foxtail, who is Reggie’s rival explorer.
+The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. The game’s main protagonist will be a Tiger named Reggie who is an explorer, seeking lost treasures in the Temple of the Sun. The game’s main antagonist will be a Fox named Foxtail, who rivals Reggie and attempts to find the treasure before him. We aim to keep the game lighthearted and fun, making the player laugh at times and leave feeling refreshed. Additionally, we aim to keep the gameplay mechanics intentionally simple so that the game is easy to pick up and play.
+
+Our game will be developed using an Agile software development approach, namely Scrum. The game will be developed by a team of five, with Evan Overweg acting as Team Leader and Scrum Master. It is to be completed within 2 Semesters at MTU, or approximately 8 months. We aim to have Level 1 of the game, all of the character mechanics (not necessarily with animations), coins/hearts/1UP mechanics, a subset of all sounds, and a rudimentary menu system implemented by the end of Semester 1. The is what we define to be the Temple of the Sun MVP. Later levels, additional sounds, animations, and refinements will be completed in Semester 2.
 
 ### Project Description (Detailed)
 
@@ -153,7 +159,7 @@ The goal of this project is to create a throwback 3D platformer reminiscent of c
   - The player will be able to walk or run throughout levels
   - The default speed is a walk but if the player holds down the run button they will break into a run allowing them to go faster.
   - There is no stamina mechanic. Running can be held indefinitely.
-  - Running at all times (opposed to walking) is not advised. In order to enfore this in levels, we may take one of these strategies:
+  - Running at all times (opposed to walking) is not advised. In order to enforce this in levels, we may take one of these strategies:
     - Running in certain areas causes damage to the player due to the environment
     - Running alerts enemies to the presence of the player
     - This is not included in the Semester 1 plan, and will be implemented in Semester 2.
@@ -185,10 +191,10 @@ Reggie (Tiger) goes to the temple in search of hidden treasure. Rival Foxtail (F
 
 Ever since Reggie was a child, he has had a desire to go on adventures. The young tiger would spare no one the privilege of hearing his dreams of travel and finding countless treasures, including his all-but-equal Foxtail. As Reggie’s dreams grew larger, Foxtail became angry and swore an oath to prevent Reggie from ever fulfilling his dreams. In fact, Foxtail works night and day to not only stop Reggie from finding the secrets locked away in forgotten chambers, but secure the riches for himself. After years of searching, Reggie has finally secured the location of the infamous Temple of the Sun - known to house the greatest score any adventurer could dream of. In a race against time, Reggie must survive the trials The Temple has in store from him and find the hidden treasures before his rival Foxtail. 
 
-### Story Breakdown per Level
+#### Story Breakdown per Level
 
 - **Level 1**
-  - Having just set off, reggie must fight his way through the jungle to get to the Temple.
+  - Having just set off, Reggie must fight his way through the jungle to get to the Temple.
   - Reggie learns that Foxtail has been monitoring his progress
   - The level ends with Reggie finding the Temple.
 - **Level 2, etc.**
@@ -344,12 +350,13 @@ The player will be scored at the end of each level, points are awarded for picki
 
 ### Semester 2
 
-- Design and implement at least 4 more puzzel levels
+- Design and implement at least 3 more puzzle levels
 - Design and implement a final boss level where Reggie must face Foxtail
 - Implement defined items above not in Semester 1 plan:
   - Character expressions / taunts
   - Menu sounds
   - "Achievement" score items after a level
+- Add animations to game mechanics
 - Debugging
 - Polishing
 - Finishing and refinement of features not completed in Semester 1
