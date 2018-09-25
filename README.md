@@ -137,8 +137,13 @@ Our game will be developed using an Agile software development approach, namely 
 
 ### Project Description (Detailed)
 
-\<Four Paragraphs or more If needs be>
-\<No more than six paragraphs>
+The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. 3D platformers formed the backbone of games in the N64 and Playstation 1 era. Sadly, this genre of games has very little representation in the modern era, with only Nintendo consitantly releasing top-tier 3D platformers. With our game, we hope to bring back the classic 3D platformer style that gamers enjoyed in the 90s. Each of our team members have distinct nostalgic memories of playing many of the classic 3D platformers as a kid. we hope to utilize our love of classic games like Super Mario 64 and Banjo Kazooie to bring an authentic experience to our customers.
+
+The games main protagonist is a tiger named Reggie who is an explorer, seeking lost treasures in the Temple of the Sun. Reggie shares many o f the same values as our inteded audience for the game; someone who loves adventuring, discovering new things, and exploring. Reggie has a rival named Foxtail who is also an adventurer. Foxtail will stop at nothing to claim the treasures of The Temple of the Sun for himself.
+
+We are aiming to keep the game lighthearted and fun, with colorful visiuals and cheery, upbeat music. We want our player to feel joyous from playing our game. We want our game to evoke nostalgia in our audience who grew up in the N64 / Playstation 1 era, but also be a fun, new expereince for the younger generation. The world will be relatively well lit incentivising exploration. We hope to evoke the feelings felt by gameers when they first starting playing classic 3D games.
+
+Our game will be developed using an Agile software development approach, namely Scrum. The game will be developed by a team of five, with Evan Overweg acting as Team Leader and Scrum Master as well as programmer. Riley Mulford, Michael Spoehr and Christian Clemmons will be programmers and Abri Ingrassia will handle the artwork and 3D models. It is to be completed within 2 Semesters at MTU, or approximately 8 months. We aim to have Level 1 of the game, all of the character mechanics (not necessarily with animations), coins/hearts/1UP mechanics, a subset of all sounds, and a rudimentary menu system implemented by the end of Semester 1. The is what we define to be the Temple of the Sun MVP. Later levels, additional sounds, animations, and refinements will be completed in Semester 2.
 
 ## What sets this project apart?
 
