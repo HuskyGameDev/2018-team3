@@ -53,7 +53,7 @@ _This GDD is adapted from the GDD Template written by: Benjamin “HeadClot” S
 - Player has the ability to single jump
 - Player can pick-up coins distributed throughout levels by passing through the coin
 - Basic "pick-up-and-throw" mechanic that can be reused to complete puzzles, attack, placing treasure in inventory, etc.
-- Heart mechanic / 1UP mechanic - see the [Core Gameplay Mechanics (Detailed)](##core-gameplay-mechanics-detailed) section for more info
+- Heart mechanic / 1UP mechanic - see the [Core Gameplay Mechanics (Detailed)](#core-gameplay-mechanics-detailed) section for more info
 
 ### Targeted platforms
 
@@ -131,19 +131,23 @@ Temple of the Sun is a 3D platformer, styled similarly to games of the N64 era, 
 
 ### Project Description (Brief)
 
-The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. The game’s main protagonist will be a Tiger named Reggie who is an explorer, seeking lost treasures in the Temple of the Sun. The game’s main antagonist will be a Fox named Foxtail, who rivals Reggie and attempts to find the treasure before him. We aim to keep the game lighthearted and fun, making the player laugh at times and leave feeling refreshed. Additionally, we aim to keep the gameplay mechanics intentionally simple so that the game is easy to pick up and play.
+The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. The game’s main protagonist will be a Tiger named Reggie who is an explorer, seeking lost treasures in the Temple of the Sun. The game’s main antagonist will be a Fox named Foxtail, who rivals Reggie and attempts to find the treasure before him. We aim to keep the game lighthearted and fun, making the player laugh at times and leaving them feeling refreshed. Additionally, we aim to keep the gameplay mechanics intentionally simple so that the game is easy to pick up and play.
 
 Our game will be developed using an Agile software development approach, namely Scrum. The game will be developed by a team of five, with Evan Overweg acting as Team Leader and Scrum Master. It is to be completed within 2 Semesters at MTU, or approximately 8 months. We aim to have Level 1 of the game, all of the character mechanics (not necessarily with animations), coins/hearts/1UP mechanics, a subset of all sounds, and a rudimentary menu system implemented by the end of Semester 1. The is what we define to be the Temple of the Sun MVP. Later levels, additional sounds, animations, and refinements will be completed in Semester 2.
 
 ### Project Description (Detailed)
 
-The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. 3D platformers formed the backbone of games in the N64 and Playstation 1 era. Sadly, this genre of games has very little representation in the modern era, with only Nintendo consitantly releasing top-tier 3D platformers. With our game, we hope to bring back the classic 3D platformer style that gamers enjoyed in the 90s. Each of our team members have distinct nostalgic memories of playing many of the classic 3D platformers as a kid. we hope to utilize our love of classic games like Super Mario 64 and Banjo Kazooie to bring an authentic experience to our customers.
+The goal of this project is to create a throwback 3D platformer reminiscent of classic 3D platformers from the N64 era. 3D platformers formed the backbone of games in the N64 and Playstation 1 era. Sadly, this genre of games has very little representation in the modern era, with only Nintendo consistently releasing top-tier 3D platformers. With our game, we hope to bring back the classic 3D platformer style that gamers enjoyed in the 90s. Each of our team members have distinct nostalgic memories of playing many of the classic 3D platformers as a kid. we hope to utilize our love of classic games like Super Mario 64 and Banjo Kazooie to bring an authentic experience to our customers.
 
-The games main protagonist is a tiger named Reggie who is an explorer, seeking lost treasures in the Temple of the Sun. Reggie shares many o f the same values as our inteded audience for the game; someone who loves adventuring, discovering new things, and exploring. Reggie has a rival named Foxtail who is also an adventurer. Foxtail will stop at nothing to claim the treasures of The Temple of the Sun for himself.
+The games main protagonist is a tiger named Reggie who is an explorer, seeking lost treasures in the Temple of the Sun. Reggie shares many of the same values as our intended audience for the game; someone who loves adventuring, discovering new things, and exploring. Reggie has a rival named Foxtail who is also an adventurer. Foxtail will stop at nothing to claim the treasures of The Temple of the Sun for himself.
 
-We are aiming to keep the game lighthearted and fun, with colorful visiuals and cheery, upbeat music. We want our player to feel joyous from playing our game. We want our game to evoke nostalgia in our audience who grew up in the N64 / Playstation 1 era, but also be a fun, new expereince for the younger generation. The world will be relatively well lit incentivising exploration. We hope to evoke the feelings felt by gameers when they first starting playing classic 3D games.
+We are aiming to keep the game lighthearted and fun, with colorful visuals and cheery, upbeat music. We want our player to feel joyous from playing our game. We want our game to evoke nostalgia in our audience who grew up in the N64 / Playstation 1 era, but also be a fun, new experience for the younger generation. The world will be relatively well lit incentivising exploration. We hope to evoke the feelings felt by gamers when they first starting playing classic 3D games.
 
 Our game will be developed using an Agile software development approach, namely Scrum. The game will be developed by a team of five, with Evan Overweg acting as Team Leader and Scrum Master as well as programmer. Riley Mulford, Michael Spoehr and Christian Clemmons will be programmers and Abri Ingrassia will handle the artwork and 3D models. It is to be completed within 2 Semesters at MTU, or approximately 8 months. We aim to have Level 1 of the game, all of the character mechanics (not necessarily with animations), coins/hearts/1UP mechanics, a subset of all sounds, and a rudimentary menu system implemented by the end of Semester 1. The is what we define to be the Temple of the Sun MVP. Later levels, additional sounds, animations, and refinements will be completed in Semester 2.
+
+Our team consists of several new members that are completely new to game development, so we are proceeding cautiously with our planning. We have implemented a [contingency plan](#contingency-plan) to account for the situation that we fall behind in implementation. New members are expected to get up to speed in Unity relatively quickly in the first semester, using the first sprint to learn the essentials. 
+
+We will be using GitHub as a source code manager, as well as a place to keep all issues/tasks. The taskboard will be the goto source of todo items and planning for the sprint. Additionally, the team will use Slack to communicate. Tentatively, we plan on having 4 hour workjams either Sunday afternoons or Saturday mornings as we see fit.
 
 ## What sets this project apart?
 
@@ -212,9 +216,13 @@ The player will run, jump and fight their way through numerous levels. The playe
 
 ### Gameplay (Detailed)
 
-The core gameplay for Temple of the Sun revolves around the player running and jumping through each level towards the end. Running can be held an indefinite amount of time without stopping; i.e. there is no stamina mechanic. There will be obstacles to impede the player’s progress. Spike pits, flame traps, boulder traps, arrow traps, temple guardians, bottomless pits, trap doors, etc. Each damage source will deal 1 heart of damage (out of three total). The player can pick up hearts to recover lost hearts. 
+The core gameplay for Temple of the Sun revolves around the player running and jumping through each level to get to the end of the level. Running can be held an indefinite amount of time without stopping; i.e. there is no stamina mechanic. There will be obstacles to impede the player’s progress: spike pits, flame traps, boulder traps, arrow traps, temple guardians, bottomless pits, trap doors, etc. Each damage source will deal 1 heart of damage (out of three total). The player can pick up hearts spread throughout levels to recover lost hearts. If the player takes three sources of damage (3 hearts) without restoring them, they will die, resulting in the reduction of a single 1UP. If the player runs out of 1UPs, the game is over.
 
-The player will be scored at the end of each level, points are awarded for picking up coins, finding collectibles, and are taken away for losing hearts or dying in a level. There is also potential for awarding points for unusual achievements (like taking exactly 343 seconds to finish a level, or opening all doors by throwing a barrel at them). 
+Coins will also be spread throughout the level. They serve two purposes: additional points added to the score at the end of the level, and obtaining additional 1UPs. After successful completion of a level, the player will receive a 1UP for every 100 coins they have collected.
+
+The player will be also scored at the end of each level. Points are awarded for picking up coins, finding collectibles, and are taken away for losing hearts or dying in a level. There is also potential for awarding points for unusual achievements (like taking exactly 343 seconds to finish a level, or opening all doors by throwing a barrel at them). However, this will be implemented in Semester 2.
+
+The pick-up-and-throw mechanic is the only non-movement mechanic in the game. Players can pick up hearts and coins by passing through them. These items cannot be thrown, as they have other uses. The player can pass through rocks to pick them up, and these can be thrown forward by pressing the throw button. 
 
 ## Assets Needed
 
