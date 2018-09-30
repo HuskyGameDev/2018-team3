@@ -36,8 +36,7 @@ public class CameraController : MonoBehaviour {
 		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
 
         // fix camera drift
-        if (Mathf.Abs(horizontal) < 0.3f)
-        {
+        if (Mathf.Abs(horizontal) < 0.3f) {
             horizontal = 0.0f;
         }
 
@@ -47,8 +46,7 @@ public class CameraController : MonoBehaviour {
 		float vertical = Input.GetAxis("Mouse Y") * rotateSpeed;
 
         // fix camera drift
-        if (Mathf.Abs(vertical) < 0.3f)
-        {
+        if (Mathf.Abs(vertical) < 0.3f) {
             vertical = 0.0f;
         }
 
