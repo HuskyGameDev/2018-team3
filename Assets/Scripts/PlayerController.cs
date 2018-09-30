@@ -14,8 +14,8 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		controller = GetComponent<CharacterController>();
-		moveSpeed = 10;
-		jumpForce = 15;
+		moveSpeed = 5f;
+		jumpForce = 15f;
 		gravityScale = 5f;
 	}
 	
@@ -26,11 +26,11 @@ public class PlayerController : MonoBehaviour {
 		float prevY = moveDirection.y; // store y value temp
 		moveDirection = (transform.forward * Input.GetAxis("Vertical")) + 
 				(transform.right * Input.GetAxis("Horizontal"));
-		moveDirection = moveDirection.normalized * moveSpeed;
+		moveDirection = moveDirection * moveSpeed;
 		moveDirection.y = prevY;
 
-		// jump logic
-		if(controller.isGrounded) {
+        // jump logic
+        if (controller.isGrounded) {
 			moveDirection.y = 0f;
 			if(Input.GetButtonDown("Jump")) {
 				moveDirection.y = jumpForce;

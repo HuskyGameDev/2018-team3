@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
 		if(!useOffset) {
 			offset = target.position - transform.position;
 		}
-		rotateSpeed = 5f;
+		rotateSpeed = 15f;
 		maxViewAngle = 45f;
 		minViewAngle = -45f;
 
@@ -34,18 +34,32 @@ public class CameraController : MonoBehaviour {
 	void LateUpdate () {
 		// get X pos of mouse and rotate to target
 		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
-		target.Rotate(0, horizontal, 0);
+
+        // fix camera drift
+        if (Mathf.Abs(horizontal) < 0.3f)
+        {
+            horizontal = 0.0f;
+        }
+
+        target.Rotate(0, horizontal, 0);
 
 		// get y pos of mouse and rotate the pivot
 		float vertical = Input.GetAxis("Mouse Y") * rotateSpeed;
-		if(invertY) {
+
+        // fix camera drift
+        if (Mathf.Abs(vertical) < 0.3f)
+        {
+            vertical = 0.0f;
+        }
+
+        if (invertY) {
 			pivot.Rotate(vertical, 0, 0);
 		} else {
 			pivot.Rotate(-vertical, 0, 0);
 		}
 
-		// Limit up/down camera rotation
-		if(pivot.rotation.eulerAngles.x > maxViewAngle && pivot.rotation.eulerAngles.x < 180f) {
+        // Limit up/down camera rotation
+        if (pivot.rotation.eulerAngles.x > maxViewAngle && pivot.rotation.eulerAngles.x < 180f) {
 			pivot.rotation = Quaternion.Euler(maxViewAngle, 0, 0);
 		}
 		if(pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 360f + minViewAngle) {
