@@ -26,6 +26,13 @@ public class PlayerController : MonoBehaviour {
 		float prevY = moveDirection.y; // store y value temp
 		moveDirection = (transform.forward * Input.GetAxis("Vertical")) + 
 				(transform.right * Input.GetAxis("Horizontal"));
+
+        if(Input.GetButton("Run")) {
+            moveSpeed = 10f;
+        } else {
+            moveSpeed = 5f;
+        }
+
 		moveDirection = moveDirection * moveSpeed;
 		moveDirection.y = prevY;
 
