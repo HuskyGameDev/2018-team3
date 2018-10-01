@@ -27,6 +27,7 @@ public class PlayerController : MonoBehaviour {
 		moveDirection = (transform.forward * Input.GetAxis("Vertical")) + 
 				(transform.right * Input.GetAxis("Horizontal"));
 
+        // let player run
         if(Input.GetButton("Run")) {
             moveSpeed = 10f;
         } else {
