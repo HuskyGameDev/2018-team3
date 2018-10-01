@@ -18,7 +18,7 @@ public class CameraController : MonoBehaviour {
 		if(!useOffset) {
 			offset = target.position - transform.position;
 		}
-		rotateSpeed = 15f;
+		rotateSpeed = 2.5f;
 		maxViewAngle = 45f;
 		minViewAngle = -45f;
 
@@ -32,29 +32,44 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
-		// get X pos of mouse and rotate to target
-		float horizontal = Input.GetAxis("Mouse X") * rotateSpeed;
-
-        // fix camera drift
-        if (Mathf.Abs(horizontal) < 0.3f) {
+        // get X pos of mouse and rotate to target
+        float xJoystick = Input.GetAxis("Mouse X");
+        Debug.Log(xJoystick);
+        
+        float horizontal;
+        if (Mathf.Abs(xJoystick) < 0.25f) // otherwise camera will drift
+        {
             horizontal = 0.0f;
+        }
+        else
+        {
+            horizontal = xJoystick * rotateSpeed;
         }
 
         target.Rotate(0, horizontal, 0);
 
-		// get y pos of mouse and rotate the pivot
-		float vertical = Input.GetAxis("Mouse Y") * rotateSpeed;
+        // get y pos of mouse and rotate the pivot
+        float yJoystick = Input.GetAxis("Mouse Y");
 
-        // fix camera drift
-        if (Mathf.Abs(vertical) < 0.3f) {
+        float vertical;
+        if (Mathf.Abs(yJoystick) < 0.25f) // otherwise camera will drift
+        {
             vertical = 0.0f;
         }
+        else
+        {
+            vertical = yJoystick * rotateSpeed;
+        }
 
-        if (invertY) {
-			pivot.Rotate(vertical, 0, 0);
-		} else {
-			pivot.Rotate(-vertical, 0, 0);
-		}
+        if (invertY)
+        {
+            pivot.Rotate(vertical, 0, 0);
+        }
+        else
+        {
+            pivot.Rotate(-vertical, 0, 0);
+        }
+
 
         // Limit up/down camera rotation
         if (pivot.rotation.eulerAngles.x > maxViewAngle && pivot.rotation.eulerAngles.x < 180f) {
