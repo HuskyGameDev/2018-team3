@@ -280,7 +280,7 @@ The pick-up-and-throw mechanic is the only non-movement mechanic in the game. Pl
   - Character Movement Sound List
     - Jumping causes a crunch noise when lifting off the ground
     - Jumping causes a thud noise when landing
-    - Picking up sound
+    - Picking up throwable objects sound
     - Throwing sound
     - Footsteps
       - should be relatively quiet, considering player is a feline. Recommendations: light crunching of leaves?
