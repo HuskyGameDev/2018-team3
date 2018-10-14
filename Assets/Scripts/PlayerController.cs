@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
 
 	private Vector3 moveDirection;
 
+    private bool hasDoubleJumped = false;
+
 	// Use this for initialization
 	void Start () {
 		controller = GetComponent<CharacterController>();
@@ -38,15 +40,22 @@ public class PlayerController : MonoBehaviour {
 		moveDirection.y = prevY;
 
         // jump logic
-        if (controller.isGrounded) {
-			moveDirection.y = 0f;
-			if(Input.GetButtonDown("Jump")) {
-				moveDirection.y = jumpForce;
-			}
-		}
+        if (controller.isGrounded)
+        {
+            moveDirection.y = 0f;
+            hasDoubleJumped = false;
+        }
+        if (Input.GetButtonDown("Jump") && (controller.isGrounded || !hasDoubleJumped))
+        {
+            if (!controller.isGrounded)
+            {
+                hasDoubleJumped = true;
+            }
+            moveDirection.y = jumpForce;
+        }
 
-		// apply gravity
-		moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
+        // apply gravity
+        moveDirection.y = moveDirection.y + (Physics.gravity.y * gravityScale * Time.deltaTime);
 
 		// apply movement
 		controller.Move(moveDirection * Time.deltaTime);
