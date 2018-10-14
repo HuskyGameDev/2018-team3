@@ -9,6 +9,7 @@ public class ItemAnimator : MonoBehaviour {
     private int sign = 1;
     float RotationSpeed = 120f;
     float TranslationSpeed = 0.5f;
+    float TranslationDistance = 0.2f;
 
     // Use this for initialization
     void Start () {
@@ -20,7 +21,7 @@ public class ItemAnimator : MonoBehaviour {
         transform.RotateAround(transform.position, transform.up, Time.deltaTime * RotationSpeed);
         transform.Translate(0, Time.deltaTime * sign * TranslationSpeed, 0);
 
-        if (Math.Abs(transform.position.y - startingY) > 0.2)
+        if (Math.Abs(transform.position.y - startingY) > TranslationDistance)
         {
             sign = -sign;
         }
