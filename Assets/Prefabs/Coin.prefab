@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114481916369990166}
   - component: {fileID: 114298830028980950}
   m_Layer: 0
-  m_Name: coin
+  m_Name: Coin
   m_TagString: Pick Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -149,3 +149,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c6b9c0d420c2bc4e93cde047c3540f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  RotationSpeedX: 0
+  RotationSpeedY: 120
+  RotationSpeedZ: 0
+  TranslationSpeedX: 0
+  TranslationSpeedY: 0.5
+  TranslationSpeedZ: 0
+  TranslationDistanceX: 0
+  TranslationDistanceY: 0.2
+  TranslationDistanceZ: 0
