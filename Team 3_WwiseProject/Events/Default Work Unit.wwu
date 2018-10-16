@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{019D30F8-E35E-4989-A439-0E92721EE23E}" SchemaVersion="85">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{019D30F8-E35E-4989-A439-0E92721EE23E}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="JungleAmbience" ID="{D6196106-E4E8-476A-95DD-6EF3089AE7E4}">
+					<ChildrenList>
+						<Action Name="" ID="{C143B123-2330-4D1A-BEC7-F46E646FEE30}" ShortID="235729075">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="12"/>
+								<Property Name="Volume" Type="Real64" Value="-96"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jungle Ambience" ID="{ED1474EE-2DF5-4811-AD9D-D295712F5E6C}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{2FEECCCA-0E68-4575-A71D-AAB033AC60B3}" ShortID="575792202">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jungle Ambience" ID="{ED1474EE-2DF5-4811-AD9D-D295712F5E6C}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{B4F7ACE7-180A-4805-9BDF-2FC62A26193F}" ShortID="511852006">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="16"/>
+								<Property Name="FadeCurve" Type="int16" Value="0"/>
+								<Property Name="FadeTime" Type="Real64" Value="4.5"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jungle Ambience" ID="{ED1474EE-2DF5-4811-AD9D-D295712F5E6C}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="CoinPickup" ID="{AD0EBB3A-231D-4074-9BF3-C80130277E0D}">
+					<ChildrenList>
+						<Action Name="" ID="{76D36976-3D42-41AB-AED3-14B4AB97776C}" ShortID="1050747312">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Coin Pickup_V1" ID="{B0F157A1-AA94-4610-8962-26F8859CA7F9}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>
