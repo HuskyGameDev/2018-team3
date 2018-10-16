@@ -1676,6 +1676,21 @@ Prefab:
       propertyPath: m_Name
       value: Heart
       objectReference: {fileID: 0}
+    - target: {fileID: 114753571118286056, guid: 959101d26bfaa484f991664460807564,
+        type: 2}
+      propertyPath: TranslationSpeedY
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753571118286056, guid: 959101d26bfaa484f991664460807564,
+        type: 2}
+      propertyPath: TranslationDistanceY
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114753571118286056, guid: 959101d26bfaa484f991664460807564,
+        type: 2}
+      propertyPath: RotationSpeedY
+      value: 120
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 959101d26bfaa484f991664460807564, type: 2}
   m_IsPrefabAsset: 0
