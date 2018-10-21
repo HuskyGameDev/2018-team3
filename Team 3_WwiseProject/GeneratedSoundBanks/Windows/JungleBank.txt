@@ -1,0 +1,8 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2397454474	JungleAmbience			\Default Work Unit\JungleAmbience	
+	2752428610	CoinPickup			\Default Work Unit\CoinPickup	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	652019439	Coin Pickup_V1	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Coin Pickup_V1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Coin Pickup_V1		167448
+	863570735	Jungle Ambience_V2	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Jungle Ambience_V2_585FF539.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Jungle Ambience\Jungle Ambience_V2		59290624
+
