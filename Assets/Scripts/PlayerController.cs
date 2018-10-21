@@ -5,13 +5,13 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour {
 
 	public CharacterController controller;
+	public Rigidbody item;
 	public float moveSpeed;
 	public float jumpForce;
 	public float gravityScale;
-
 	private Vector3 moveDirection;
-
     private bool hasDoubleJumped = false;
+	private bool isCarrying = false;
 
 	// Use this for initialization
 	void Start () {
@@ -23,6 +23,21 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		// pick up object
+		if(!isCarrying) {
+			// TODO check if in range
+			if (Input.GetButtonDown("Grab")) {
+				pickup();
+				isCarrying = true;
+			}
+		} else if (isCarrying) {
+			if (Input.GetButtonDown("Grab")) {
+				drop();
+				isCarrying = false;
+			}
+		}
+		
 		// set movement
 		//NOTE: Use GetAxisRaw to remove "sliding" after movement
 		float prevY = moveDirection.y; // store y value temp
@@ -59,6 +74,16 @@ public class PlayerController : MonoBehaviour {
 
 		// apply movement
 		controller.Move(moveDirection * Time.deltaTime);
+	}
+	
+	private void pickup()
+	{
+
+	}
+	
+	private void drop()
+	{
+
 	}
 
     private void OnTriggerEnter(Collider other)

@@ -34,7 +34,6 @@ public class CameraController : MonoBehaviour {
 	void LateUpdate () {
         // get X pos of mouse and rotate to target
         float xJoystick = Input.GetAxis("Mouse X");
-        Debug.Log(xJoystick);
         
         float horizontal;
         if (Mathf.Abs(xJoystick) < 0.25f) // otherwise camera will drift
