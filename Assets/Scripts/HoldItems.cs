@@ -53,7 +53,7 @@
          ball.GetComponent<Rigidbody>().useGravity = false;
  
          // apply the same rotation our main object has.
-         ball.transform.localRotation = transform.rotation;
+         //ball.transform.localRotation = transform.rotation;
 		 
          // re-position the ball on our guide object 
          ball.transform.position = guide.position;
