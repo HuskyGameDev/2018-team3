@@ -40,7 +40,7 @@ GameObject:
   - component: {fileID: 65421982744513050}
   - component: {fileID: 114448215029118862}
   m_Layer: 0
-  m_Name: 12190_Heart_v1_L3
+  m_Name: Heart
   m_TagString: Pick Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
