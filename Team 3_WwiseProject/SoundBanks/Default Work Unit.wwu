@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EDAC9D2F-E562-4B49-B5CE-85BEECCBBDFE}" SchemaVersion="85">
+	<SoundBanks>
+		<WorkUnit Name="Default Work Unit" ID="{EDAC9D2F-E562-4B49-B5CE-85BEECCBBDFE}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundBank Name="JungleBank" ID="{57A2195C-EBFE-47CE-9A99-FD517F1A52BD}">
+					<ObjectInclusionList>
+						<ObjectRef Name="CoinPickup" ID="{AD0EBB3A-231D-4074-9BF3-C80130277E0D}" WorkUnitID="{019D30F8-E35E-4989-A439-0E92721EE23E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="JungleAmbience" ID="{D6196106-E4E8-476A-95DD-6EF3089AE7E4}" WorkUnitID="{019D30F8-E35E-4989-A439-0E92721EE23E}" Filter="7" Origin="Manual"/>
+					</ObjectInclusionList>
+					<ObjectExclusionList/>
+					<GameSyncExclusionList/>
+				</SoundBank>
+			</ChildrenList>
+		</WorkUnit>
+	</SoundBanks>
+</WwiseDocument>
