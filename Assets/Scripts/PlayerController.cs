@@ -12,6 +12,10 @@ public class PlayerController : MonoBehaviour {
 	private Vector3 moveDirection;
     private bool hasDoubleJumped = false;
 	private bool isCarrying = false;
+	
+	public Transform pivot;
+	public float rotateSpeed;
+	public GameObject playerModel;
 
 	// Use this for initialization
 	void Start () {
@@ -23,20 +27,6 @@ public class PlayerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
-		// pick up object
-		if(!isCarrying) {
-			// TODO check if in range
-			if (Input.GetButtonDown("Grab")) {
-				pickup();
-				isCarrying = true;
-			}
-		} else if (isCarrying) {
-			if (Input.GetButtonDown("Grab")) {
-				drop();
-				isCarrying = false;
-			}
-		}
 		
 		// set movement
 		//NOTE: Use GetAxisRaw to remove "sliding" after movement
@@ -74,16 +64,13 @@ public class PlayerController : MonoBehaviour {
 
 		// apply movement
 		controller.Move(moveDirection * Time.deltaTime);
-	}
-	
-	private void pickup()
-	{
-
-	}
-	
-	private void drop()
-	{
-
+		
+		// move player in different directions based on camera look directions
+		if (Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0) {
+			transform.rotation = Quaternion.Euler(0f, pivot.rotation.eulerAngles.y, 0f);
+			Quaternion newRotation = Quaternion.LookRotation(new Vector3(moveDirection.x, 0f, moveDirection.z));
+			playerModel.transform.rotation = Quaternion.Slerp(playerModel.transform.rotation, newRotation, rotateSpeed * Time.deltaTime);
+		}
 	}
 
     private void OnTriggerEnter(Collider other)
