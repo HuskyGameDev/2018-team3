@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ValidationCache Version="1" SchemaVersion="85">
-	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Actor-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1539735436" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Attenuations\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Audio Devices\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Control Surface Sessions\Default Work Unit.wwu" DateLow="1539733651" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Conversion Settings\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Conversion Settings\Factory Conversion Settings.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Dynamic Dialogue\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Effects\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Effects\Factory Effects.wwu" DateLow="1539732210" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Events\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Events\Default Work Unit.wwu" DateLow="1539733997" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Game Parameters\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Interactive Music Hierarchy\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Master-Mixer Hierarchy\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
@@ -18,10 +18,11 @@
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Presets\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Queries\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Queries\Factory Queries.wwu" DateLow="1539732210" DateHigh="0"/>
-	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\SoundBanks\Default Work Unit.wwu" DateLow="1539734041" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Soundcaster Sessions\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\States\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Switches\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
+	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Team 3_WwiseProject.atstocke.wsettings" DateLow="1539736603" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Team 3_WwiseProject.wproj" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Triggers\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>
 	<ValidationCacheItem File="C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\Virtual Acoustics\Default Work Unit.wwu" DateLow="1539732210" DateHigh="0"/>

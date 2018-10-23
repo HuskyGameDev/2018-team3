@@ -17,16 +17,29 @@
 			<Path>JungleBank.bnk</Path>
 			<IncludedEvents>
 				<Event Id="2752428610" Name="CoinPickup" ObjectPath="\Events\Default Work Unit\CoinPickup"/>
+				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep"/>
 				<Event Id="2397454474" Name="JungleAmbience" ObjectPath="\Events\Default Work Unit\JungleAmbience"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="302814057" Language="SFX">
+					<ShortName>Grass Footstep 2.wav</ShortName>
+					<Path>SFX\Grass Footstep 2_A075B900.wem</Path>
+				</File>
+				<File Id="358237698" Language="SFX">
+					<ShortName>Grass Footstep 1.wav</ShortName>
+					<Path>SFX\Grass Footstep 1_570A0C82.wem</Path>
+				</File>
+				<File Id="389321457" Language="SFX">
+					<ShortName>Grass Footstep 2.wav</ShortName>
+					<Path>SFX\Grass Footstep 2_55B83CF8.wem</Path>
+				</File>
 				<File Id="652019439" Language="SFX">
 					<ShortName>Coin Pickup_V1.wav</ShortName>
 					<Path>SFX\Coin Pickup_V1_1C9C67B2.wem</Path>
 				</File>
 				<File Id="863570735" Language="SFX">
 					<ShortName>Jungle Ambience_V2.wav</ShortName>
-					<Path>SFX\Jungle Ambience_V2_585FF539.wem</Path>
+					<Path>SFX\Jungle Ambience_V2_31D22EEE.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>

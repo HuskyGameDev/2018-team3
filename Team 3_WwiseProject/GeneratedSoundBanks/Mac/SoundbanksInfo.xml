@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="11" SoundbankVersion="128">
+	<RootPaths>
+		<ProjectRoot>C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="504504068" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\JungleBank</ObjectPath>
+			<ShortName>JungleBank</ShortName>
+			<Path>JungleBank.bnk</Path>
+			<IncludedEvents>
+				<Event Id="2752428610" Name="CoinPickup" ObjectPath="\Events\Default Work Unit\CoinPickup"/>
+				<Event Id="2397454474" Name="JungleAmbience" ObjectPath="\Events\Default Work Unit\JungleAmbience"/>
+			</IncludedEvents>
+			<IncludedMemoryFiles>
+				<File Id="652019439" Language="SFX">
+					<ShortName>Coin Pickup_V1.wav</ShortName>
+					<Path>SFX\Coin Pickup_V1_1C9C67B2.wem</Path>
+				</File>
+				<File Id="863570735" Language="SFX">
+					<ShortName>Jungle Ambience_V2.wav</ShortName>
+					<Path>SFX\Jungle Ambience_V2_31D22EEE.wem</Path>
+				</File>
+			</IncludedMemoryFiles>
+		</SoundBank>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
