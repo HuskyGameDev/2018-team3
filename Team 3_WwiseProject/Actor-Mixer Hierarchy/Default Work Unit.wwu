@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{495ADE7E-D2B0-4576-BA2F-52B516657426}" SchemaVersion="85">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{495ADE7E-D2B0-4576-BA2F-52B516657426}" PersistMode="Standalone">
+			<ChildrenList>
+				<ActorMixer Name="Environment" ID="{914C0A8F-9092-4BB7-9EC7-CA7D75AA86D3}" ShortID="224322754">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<ActorMixer Name="Ambience" ID="{6A53065F-EC4D-48D0-B0FD-1F5ADBF61C9E}" ShortID="670536950">
+							<PropertyList>
+								<Property Name="EnablePositioning" Type="bool" Value="False"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-17</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<RandomSequenceContainer Name="Jungle Ambience" ID="{ED1474EE-2DF5-4811-AD9D-D295712F5E6C}" ShortID="817908482">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Jungle Ambience_V2" ID="{86B87FE4-068B-4195-9F30-8E6A22A279CA}" ShortID="611642515">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Jungle Ambience_V2" ID="{1B319850-2A86-47AC-8C91-8893B6D3A18B}" ShortID="863570735">
+													<PropertyList>
+														<Property Name="CrossfadeDuration" Type="Real64" Value="57"/>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.77635683940025E-15"/>
+														<Property Name="LoopBegin" Type="Real64" Value="5.28124999999999"/>
+														<Property Name="LoopEnd" Type="Real64" Value="319.515625"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+														<Property Name="TrimEnd" Type="Real64" Value="336.113839285714"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Jungle Ambience_V2.wav</AudioFile>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Jungle Ambience_V2" ID="{1B319850-2A86-47AC-8C91-8893B6D3A18B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+							</ChildrenList>
+						</ActorMixer>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Player" ID="{7AE0438C-AD18-4EE2-92E3-B6D71A886A10}" ShortID="437756726">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Enemies" ID="{CA2047FB-B50D-4B71-96FE-9E73BF9D2935}" ShortID="304151364">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+						</Reference>
+					</ReferenceList>
+				</ActorMixer>
+				<ActorMixer Name="Interactables" ID="{CD8569FF-F3F6-4D7D-970F-14EBB9E65E98}" ShortID="524402856">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="Coin Pickup_V1" ID="{B0F157A1-AA94-4610-8962-26F8859CA7F9}" ShortID="811375149">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Coin Pickup_V1" ID="{3D10AFB7-AD80-4640-B142-3A0B97C23FFA}" ShortID="652019439">
+									<Language>SFX</Language>
+									<AudioFile>Coin Pickup_V1.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Coin Pickup_V1" ID="{3D10AFB7-AD80-4640-B142-3A0B97C23FFA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

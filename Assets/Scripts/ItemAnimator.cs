@@ -28,7 +28,7 @@ public class ItemAnimator : MonoBehaviour {
             Time.deltaTime * signZ * TranslationSpeedZ);
         if (Math.Abs(transform.position.x - startingX) > TranslationDistanceX)
         {
-            signY = -signY;
+            signX = -signX;
         }
 
         if (Math.Abs(transform.position.y - startingY) > TranslationDistanceY || transform.position.y < 0)
@@ -38,7 +38,7 @@ public class ItemAnimator : MonoBehaviour {
 
         if (Math.Abs(transform.position.z - startingZ) > TranslationDistanceZ)
         {
-            signY = -signY;
+            signZ = -signZ;
         }
     }
 }
