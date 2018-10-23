@@ -11,24 +11,110 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71ae9fe7d270b8c4f91746823d9058a5, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
+  AcousticTextureWwu:
+  - Guid: '{F2B562E0-DA2D-47F0-9D50-FF83AD0F08F9}'
+    m_lastTimePart2: -1999227970
+    m_lastTimePsrt1: 1653066800
+    ParentPhysicalPath: 
+    PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    List: []
   autoPopulateEnabled: 1
-  AuxBusWwu: []
-  BankWwu: []
+  AuxBusWwu:
+  - Guid: '{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}'
+    m_lastTimePart2: -1999227970
+    m_lastTimePsrt1: 1652435944
+    ParentPhysicalPath: 
+    PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    List: []
+  BankWwu:
+  - Guid: '{EDAC9D2F-E562-4B49-B5CE-85BEECCBBDFE}'
+    m_lastTimePart2: -1999227966
+    m_lastTimePsrt1: -1520551660
+    ParentPhysicalPath: 
+    PhysicalPath: SoundBanks\Default Work Unit.wwu
+    List:
+    - Guid: 5c19a257feebce479a99fd517f1a52bd
+      ID: 504504068
+      Name: JungleBank
+      Path: Default Work Unit\JungleBank
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: JungleBank
+        ObjectType: 7
   basePath: Audio\GeneratedSoundBanks
   callbackManagerBufferSize: 4
   CurrentPluginConfig: 
   defaultPoolSize: 4096
-  EventWwu: []
-  ExpandedItems: []
+  EventWwu:
+  - Guid: '{019D30F8-E35E-4989-A439-0E92721EE23E}'
+    m_lastTimePart2: -1999227966
+    m_lastTimePsrt1: -1959749510
+    ParentPhysicalPath: 
+    PhysicalPath: Events\Default Work Unit.wwu
+    List:
+    - Guid: 3abb0ead1d2374409bf3c80130277e0d
+      ID: -1542538686
+      Name: CoinPickup
+      Path: Default Work Unit\CoinPickup
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CoinPickup
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - Guid: 066119d6e8e46a4795dd6ef3089ae7e4
+      ID: -1897512822
+      Name: JungleAmbience
+      Path: Default Work Unit\JungleAmbience
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: JungleAmbience
+        ObjectType: 3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  ExpandedItems:
+  - /Team 3_WwiseProject
+  - /Team 3_WwiseProject/Events
+  - /Team 3_WwiseProject/Events/Default Work Unit
+  - /Team 3_WwiseProject/SoundBanks
+  - /Team 3_WwiseProject/SoundBanks/Default Work Unit
   language: English(US)
   lowerPoolSize: 2048
   m_lastPopulateTimePart2: 0
   m_lastPopulateTimePsrt1: 0
   memoryCutoffThreshold: 0.95
   preparePoolSize: 0
-  RtpcWwu: []
-  StateWwu: []
+  RtpcWwu:
+  - Guid: '{BD60C9E9-E66F-4C3E-A638-B408CE5F109D}'
+    m_lastTimePart2: -1999227970
+    m_lastTimePsrt1: 1652309367
+    ParentPhysicalPath: 
+    PhysicalPath: Game Parameters\Default Work Unit.wwu
+    List: []
+  StateWwu:
+  - Guid: '{54284171-8A80-433A-A219-4CE4962DD4E7}'
+    m_lastTimePart2: -1999227970
+    m_lastTimePsrt1: 1652886851
+    ParentPhysicalPath: 
+    PhysicalPath: States\Default Work Unit.wwu
+    List: []
   streamingPoolSize: 1024
-  SwitchWwu: []
-  TriggerWwu: []
+  SwitchWwu:
+  - Guid: '{917A6B19-2CF9-4E92-B5D0-2B245E340830}'
+    m_lastTimePart2: -1999227970
+    m_lastTimePsrt1: 1653106485
+    ParentPhysicalPath: 
+    PhysicalPath: Switches\Default Work Unit.wwu
+    List: []
+  TriggerWwu:
+  - Guid: '{1D1953EA-E7A2-4258-8DE4-2A5F1E105F33}'
+    m_lastTimePart2: -1999227970
+    m_lastTimePsrt1: 1652996795
+    ParentPhysicalPath: 
+    PhysicalPath: Triggers\Default Work Unit.wwu
+    List: []

@@ -1,8 +1,12 @@
 Event	ID	Name			Wwise Object Path	Notes
+	1866025847	Footstep			\Default Work Unit\Footstep	
 	2397454474	JungleAmbience			\Default Work Unit\JungleAmbience	
 	2752428610	CoinPickup			\Default Work Unit\CoinPickup	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	302814057	Grass Footstep 2	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Grass Footstep 2_A075B900.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps_Grass\Grass Footstep 2		78320
+	358237698	Grass Footstep 3	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Grass Footstep 1_570A0C82.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps_Grass\Grass Footstep 3		88656
+	389321457	Grass Footstep 4	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Grass Footstep 2_55B83CF8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps_Grass\Grass Footstep 4		72908
 	652019439	Coin Pickup_V1	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Coin Pickup_V1_1C9C67B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Interactables\Coin Pickup_V1		167448
-	863570735	Jungle Ambience_V2	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Jungle Ambience_V2_585FF539.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Jungle Ambience\Jungle Ambience_V2		59290624
+	863570735	Jungle Ambience_V2	C:\Users\atstocke\Documents\Team 3\Team 3_WwiseProject\.cache\Windows\SFX\Jungle Ambience_V2_31D22EEE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Ambience\Jungle Ambience\Jungle Ambience_V2		59290624
 

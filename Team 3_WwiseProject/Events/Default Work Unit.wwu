@@ -54,6 +54,20 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Footstep" ID="{B34D1E99-C8B3-4BA9-AD40-2AA5EEF5A042}">
+					<ChildrenList>
+						<Action Name="" ID="{CF46790A-B5E6-48E4-A8A0-0511E8B3EF24}" ShortID="815523473">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Grass" ID="{802C0AA7-8555-4274-A757-0135A4207E64}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
