@@ -16,26 +16,39 @@
 			<ShortName>JungleBank</ShortName>
 			<Path>JungleBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="612075679" Name="Checkpoint" ObjectPath="\Events\Default Work Unit\Checkpoint"/>
 				<Event Id="2752428610" Name="CoinPickup" ObjectPath="\Events\Default Work Unit\CoinPickup"/>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep"/>
 				<Event Id="2397454474" Name="JungleAmbience" ObjectPath="\Events\Default Work Unit\JungleAmbience"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="302814057" Language="SFX">
-					<ShortName>Grass Footstep 2.wav</ShortName>
-					<Path>SFX\Grass Footstep 2_A075B900.wem</Path>
+				<File Id="236262193" Language="SFX">
+					<ShortName>Grass Footsteps#01.wav</ShortName>
+					<Path>SFX\Grass Footsteps#01_A75DE23F.wem</Path>
 				</File>
-				<File Id="358237698" Language="SFX">
-					<ShortName>Grass Footstep 1.wav</ShortName>
-					<Path>SFX\Grass Footstep 1_570A0C82.wem</Path>
-				</File>
-				<File Id="389321457" Language="SFX">
-					<ShortName>Grass Footstep 2.wav</ShortName>
-					<Path>SFX\Grass Footstep 2_55B83CF8.wem</Path>
+				<File Id="385288777" Language="SFX">
+					<ShortName>Grass Footsteps#01.wav</ShortName>
+					<Path>SFX\Grass Footsteps#01_12F0BEC5.wem</Path>
 				</File>
 				<File Id="652019439" Language="SFX">
 					<ShortName>Coin Pickup_V1.wav</ShortName>
-					<Path>SFX\Coin Pickup_V1_1C9C67B2.wem</Path>
+					<Path>SFX\Coin Pickup_V1_241F3587.wem</Path>
+				</File>
+				<File Id="676835150" Language="SFX">
+					<ShortName>Grass Footsteps#01.wav</ShortName>
+					<Path>SFX\Grass Footsteps#01_68F55D65.wem</Path>
+				</File>
+				<File Id="704451495" Language="SFX">
+					<ShortName>Grass Footsteps#01.wav</ShortName>
+					<Path>SFX\Grass Footsteps#01_7AF9F95A.wem</Path>
+				</File>
+				<File Id="714095219" Language="SFX">
+					<ShortName>Health Pickup.wav</ShortName>
+					<Path>SFX\Health Pickup_7F235479.wem</Path>
+				</File>
+				<File Id="826811789" Language="SFX">
+					<ShortName>Grass Footsteps#01.wav</ShortName>
+					<Path>SFX\Grass Footsteps#01_B023DD7C.wem</Path>
 				</File>
 				<File Id="863570735" Language="SFX">
 					<ShortName>Jungle Ambience_V2.wav</ShortName>

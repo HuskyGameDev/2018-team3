@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID CHECKPOINT = 612075679U;
         static const AkUniqueID COINPICKUP = 2752428610U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
         static const AkUniqueID JUNGLEAMBIENCE = 2397454474U;

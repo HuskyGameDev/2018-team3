@@ -7,6 +7,7 @@
 					<ObjectInclusionList>
 						<ObjectRef Name="CoinPickup" ID="{AD0EBB3A-231D-4074-9BF3-C80130277E0D}" WorkUnitID="{019D30F8-E35E-4989-A439-0E92721EE23E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="JungleAmbience" ID="{D6196106-E4E8-476A-95DD-6EF3089AE7E4}" WorkUnitID="{019D30F8-E35E-4989-A439-0E92721EE23E}" Filter="7" Origin="Manual"/>
+						<ObjectRef Name="Checkpoint" ID="{0A7479E0-5ED2-4AA1-B09E-BC2C4628A389}" WorkUnitID="{019D30F8-E35E-4989-A439-0E92721EE23E}" Filter="7" Origin="Manual"/>
 						<ObjectRef Name="Footstep" ID="{B34D1E99-C8B3-4BA9-AD40-2AA5EEF5A042}" WorkUnitID="{019D30F8-E35E-4989-A439-0E92721EE23E}" Filter="7" Origin="Manual"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
