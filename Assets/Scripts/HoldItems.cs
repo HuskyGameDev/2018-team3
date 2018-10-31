@@ -46,17 +46,14 @@
 		if (!ball)
 			return;
  
-         // set the object parent to our guide empty object.
-         ball.transform.SetParent(guide);
- 
          // set gravity to false while holding it
          ball.GetComponent<Rigidbody>().useGravity = false;
- 
-         // apply the same rotation our main object has.
-         ball.transform.localRotation = transform.rotation;
 		 
          // re-position the ball on our guide object 
          ball.transform.position = guide.position;
+		 
+		 // Disable collisions
+		 ball.GetComponent<SphereCollider>().enabled = false;
  
          canHold = false;
      }
@@ -70,10 +67,10 @@
          ball.GetComponent<Rigidbody>().useGravity = true;
 		  
          // apply velocity on throwing
-         guide.GetChild(0).gameObject.GetComponent<Rigidbody>().velocity = transform.forward * throwSpeed;
- 
-         // unparent our ball
-         guide.GetChild(0).parent = null;
+         ball.GetComponent<Rigidbody>().velocity = transform.forward * throwSpeed;
+		 
+		 // re-enable collisions
+		 ball.GetComponent<SphereCollider>().enabled = true;
          
 		 canHold = true;
      }
