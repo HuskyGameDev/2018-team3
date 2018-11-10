@@ -567,6 +567,7 @@ MonoBehaviour:
   moveSpeed: 10
   jumpForce: 0
   gravityScale: 0
+  FootStepFrequency: 100
   pivot: {fileID: 1278505792}
   rotateSpeed: 10
   playerModel: {fileID: 404168829}
