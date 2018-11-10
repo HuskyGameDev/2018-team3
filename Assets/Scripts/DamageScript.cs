@@ -20,6 +20,8 @@ public class DamageScript : MonoBehaviour {
         {
             GameManager gameManager = FindObjectOfType<GameManager>();
             gameManager.RemoveHearts(1);
+
+            gameManager.ShowDialog("hahahaha! I am Foxtail and you are a stupid tiger for trying to come out in my jungle!");
         }
     }
 }

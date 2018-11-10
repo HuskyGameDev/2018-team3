@@ -13,13 +13,21 @@ public class GameManager : MonoBehaviour {
     public GameObject Heart3;
     public Text CoinText;
     public Text OneUpText;
+    public GameObject DialogBackground;
+    public GameObject DialogHead;
+    public Text DialogText;
 
     private int heart1BlinkState = 0;
     private int heart2BlinkState = 0;
     private int heart3BlinkState = 0;
 
+    public float DialogTextRenderRate = 0.1f;
+    public float DialogTextShowDuration = 3.0f;
     public float HeartBlinkRate = 0.1f;
     public int HeartBlinkCount = 15;
+
+    private string remainingDiaglogText = "";
+    private bool dialogTextRendering = false;
 
     // Use this for initialization
     void Start () {
@@ -27,7 +35,10 @@ public class GameManager : MonoBehaviour {
         {
             HeartBlinkCount++; // must be an odd number or it won't work. 
         }
-	}
+        DialogBackground.SetActive(false);
+        DialogHead.SetActive(false);
+        DialogText.gameObject.SetActive(false);
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -148,5 +159,45 @@ public class GameManager : MonoBehaviour {
             heart3BlinkState = 0;
             CancelInvoke("ToggleHeart3");
         }
+    }
+
+    public void ShowDialog(string text)
+    {
+        if (dialogTextRendering)
+        {
+            return;
+        }
+        dialogTextRendering = true;
+        remainingDiaglogText = text;
+
+        DialogText.text = "";
+        DialogBackground.SetActive(true);
+        DialogHead.SetActive(true);
+        DialogText.gameObject.SetActive(true);
+
+        InvokeRepeating("RenderDialogText", 0.0f, DialogTextRenderRate);
+    }
+
+    private void RenderDialogText()
+    {
+        DialogText.text += remainingDiaglogText.Substring(0, 1);
+        remainingDiaglogText = remainingDiaglogText.Substring(1);
+
+        Debug.Log(remainingDiaglogText);
+
+        if (remainingDiaglogText.Equals(""))
+        {
+            dialogTextRendering = false;
+            CancelInvoke("RenderDialogText");
+
+            Invoke("ClearDialog", DialogTextShowDuration);
+        }
+    }
+
+    private void ClearDialog()
+    {
+        DialogBackground.SetActive(false);
+        DialogHead.SetActive(false);
+        DialogText.gameObject.SetActive(false);
     }
 }
