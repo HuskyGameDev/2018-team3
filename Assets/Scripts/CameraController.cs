@@ -24,7 +24,8 @@ public class CameraController : MonoBehaviour {
 
 		// move pivot to player and make pivot child of player
 		pivot.transform.position = target.transform.position;
-		pivot.transform.parent = target.transform;
+		//pivot.transform.parent = target.transform;
+		pivot.transform.parent = null;
 
 		// hide cursor
 		Cursor.lockState = CursorLockMode.Locked;
@@ -32,6 +33,9 @@ public class CameraController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void LateUpdate () {
+		
+		pivot.transform.position = target.transform.position;
+		
         // get X pos of mouse and rotate to target
         float xJoystick = Input.GetAxis("Mouse X");
         
@@ -45,7 +49,7 @@ public class CameraController : MonoBehaviour {
             horizontal = xJoystick * rotateSpeed;
         }
 
-        target.Rotate(0, horizontal, 0);
+        pivot.Rotate(0, horizontal, 0);
 
         // get y pos of mouse and rotate the pivot
         float yJoystick = Input.GetAxis("Mouse Y");
@@ -72,14 +76,19 @@ public class CameraController : MonoBehaviour {
 
         // Limit up/down camera rotation
         if (pivot.rotation.eulerAngles.x > maxViewAngle && pivot.rotation.eulerAngles.x < 180f) {
-			pivot.rotation = Quaternion.Euler(maxViewAngle, 0, 0);
+			pivot.rotation = Quaternion.Euler(maxViewAngle, pivot.eulerAngles.y, 0);
 		}
 		if(pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 360f + minViewAngle) {
-			pivot.rotation = Quaternion.Euler(360f + minViewAngle, 0, 0);
+			pivot.rotation = Quaternion.Euler(360f + minViewAngle, pivot.eulerAngles.y, 0);
+            Debug.Log("HELLO");
+		}
+		if(pivot.rotation.eulerAngles.x > 180f && pivot.rotation.eulerAngles.x < 360f + minViewAngle) {
+			pivot.rotation = Quaternion.Euler(360f + minViewAngle, pivot.eulerAngles.y, 0);
+            Debug.Log("THERE");
 		}
 
 		// move camera based on current rotation of target and original offset
-		float yAngle = target.eulerAngles.y;
+		float yAngle = pivot.eulerAngles.y;
 		float xAngle = pivot.eulerAngles.x;
 		Quaternion rotation = Quaternion.Euler(xAngle, yAngle, 0);
 		transform.position = target.position - (rotation * offset);
