@@ -68,6 +68,48 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Checkpoint" ID="{0A7479E0-5ED2-4AA1-B09E-BC2C4628A389}">
+					<ChildrenList>
+						<Action Name="" ID="{00FE60B2-D165-475E-8610-8CDFFC316B30}" ShortID="374901323">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Checkpoint" ID="{9402DE3D-C50A-4A67-8938-E71B6EEC11CD}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Music_Jungle" ID="{00047785-DCAC-4109-AEFA-1F9ACD818227}">
+					<ChildrenList>
+						<Action Name="" ID="{509EA94B-69A6-4A1F-B751-10407EBB6361}" ShortID="568389547">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="TOTS_JungleMusic_V2" ID="{F4E05138-D363-4FB0-9CF9-1CCBE8B875F4}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Footstep_Dirt" ID="{BCE9F485-0AEB-48F7-B9AA-AC89259D2A6E}">
+					<ChildrenList>
+						<Action Name="" ID="{95739BB5-1226-4505-BD84-FDBDA751A212}" ShortID="846198927">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Footsteps_Dirt" ID="{1E126DF6-0DC7-4639-86F6-D633ECCBA7B6}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

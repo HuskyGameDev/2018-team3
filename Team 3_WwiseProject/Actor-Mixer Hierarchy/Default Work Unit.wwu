@@ -110,6 +110,9 @@
 								<Property Name="PositioningType" Type="int16" Value="1"/>
 								<Property Name="Spatialization" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-4</Value>
+									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
 											<Modifier Name="" ID="{083A8A54-3691-434D-AFDB-4AF0AC47534F}">
@@ -131,19 +134,7 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<Sound Name="Grass Footstep 1" ID="{4F6E4BF1-923C-46A9-8B96-E71F9351D356}" ShortID="814478289">
-									<PropertyList>
-										<Property Name="Inclusion" Type="bool">
-											<ValueList>
-												<Value>False</Value>
-											</ValueList>
-										</Property>
-										<Property Name="Lowpass" Type="int16">
-											<ValueList>
-												<Value>20</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="Grass Footsteps#01" ID="{47628D58-6C3A-417E-81FA-F449000144B3}" ShortID="388476523">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
@@ -153,21 +144,23 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Grass Footstep 1" ID="{641A76B0-BADD-4C5E-A831-F6B68781A6DA}" ShortID="139256191">
+										<AudioFileSource Name="Grass Footsteps#01" ID="{24DE902D-1865-467D-AB27-33998A26D6AF}" ShortID="236262193">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="0.078125"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.05859375"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.542689732142857"/>
+												<Property Name="TrimBegin" Type="Real64" Value="32.5731332759441"/>
+												<Property Name="TrimEnd" Type="Real64" Value="32.9494733941192"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Grass Footstep 1.wav</AudioFile>
+											<AudioFile>Grass Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="385288777"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Grass Footstep 1" ID="{641A76B0-BADD-4C5E-A831-F6B68781A6DA}" Platform="Linked"/>
+										<ActiveSource Name="Grass Footsteps#01" ID="{24DE902D-1865-467D-AB27-33998A26D6AF}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Grass Footstep 2" ID="{719C31FA-2BB3-47BA-BEDE-14B529F72541}" ShortID="490550510">
+								<Sound Name="Grass Footsteps#01_01" ID="{5D579374-ED7D-4E38-8018-565099B9F324}" ShortID="952349981">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
@@ -177,28 +170,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Grass Footstep 2" ID="{222A95D1-6183-4CA6-8F2B-71C1742494EA}" ShortID="302814057">
+										<AudioFileSource Name="Grass Footsteps#01" ID="{14900EE7-E218-4081-B7D3-4D447A29BD7D}" ShortID="676835150">
 											<PropertyList>
-												<Property Name="FadeOutDuration" Type="Real64" Value="5.02232142857143E-02"/>
-												<Property Name="TrimBegin" Type="Real64" Value="0.132533482142857"/>
-												<Property Name="TrimEnd" Type="Real64" Value="0.576171875"/>
+												<Property Name="TrimBegin" Type="Real64" Value="21.1166694880113"/>
+												<Property Name="TrimEnd" Type="Real64" Value="21.4968250359557"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Grass Footstep 2.wav</AudioFile>
+											<AudioFile>Grass Footsteps#01.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Grass Footstep 2" ID="{222A95D1-6183-4CA6-8F2B-71C1742494EA}" Platform="Linked"/>
+										<ActiveSource Name="Grass Footsteps#01" ID="{14900EE7-E218-4081-B7D3-4D447A29BD7D}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Grass Footstep 4" ID="{9F903635-11D0-40D7-AC37-F8AA6116C71B}" ShortID="168904462">
-									<PropertyList>
-										<Property Name="Volume" Type="Real64">
-											<ValueList>
-												<Value>-4</Value>
-											</ValueList>
-										</Property>
-									</PropertyList>
+								<Sound Name="Grass Footsteps#01_02" ID="{55AB09DE-6420-4245-83BA-985E09D8FDB0}" ShortID="665984721">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
@@ -208,20 +193,20 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Grass Footstep 2" ID="{5B1D09F2-7771-4DB8-BC83-C5A14EFE27AE}" ShortID="389321457">
+										<AudioFileSource Name="Grass Footsteps#01" ID="{09DDAED4-BD4F-45A3-A35A-2357A1C7EA0A}" ShortID="826811789">
 											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="0.733816964285714"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.14676339285714"/>
+												<Property Name="TrimBegin" Type="Real64" Value="32.6036567141002"/>
+												<Property Name="TrimEnd" Type="Real64" Value="33.0180355108864"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Grass Footstep 2.wav</AudioFile>
+											<AudioFile>Grass Footsteps#01.wav</AudioFile>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Grass Footstep 2" ID="{5B1D09F2-7771-4DB8-BC83-C5A14EFE27AE}" Platform="Linked"/>
+										<ActiveSource Name="Grass Footsteps#01" ID="{09DDAED4-BD4F-45A3-A35A-2357A1C7EA0A}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
-								<Sound Name="Grass Footstep 3" ID="{EEA21707-F489-415C-837B-A3F3B2B1E27F}" ShortID="1003877071">
+								<Sound Name="Grass Footsteps#01_03" ID="{701C1575-5130-45DE-BFDB-42C648BB4336}" ShortID="245788420">
 									<ReferenceList>
 										<Reference Name="Conversion">
 											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
@@ -231,17 +216,46 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<AudioFileSource Name="Grass Footstep 1" ID="{74A87CF1-CBE2-4E4C-B852-7B9C16AC903B}" ShortID="358237698">
+										<AudioFileSource Name="Grass Footsteps#01" ID="{366F7E61-22B0-41EA-928C-246B52DE26C8}" ShortID="385288777">
 											<PropertyList>
-												<Property Name="TrimBegin" Type="Real64" Value="0.595703125"/>
-												<Property Name="TrimEnd" Type="Real64" Value="1.09793526785714"/>
+												<Property Name="TrimBegin" Type="Real64" Value="34.5861386064628"/>
+												<Property Name="TrimEnd" Type="Real64" Value="34.9255962368658"/>
 											</PropertyList>
 											<Language>SFX</Language>
-											<AudioFile>Grass Footstep 1.wav</AudioFile>
+											<AudioFile>Grass Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="704451495"/>
+											</ConvertedFileIDList>
 										</AudioFileSource>
 									</ChildrenList>
 									<ActiveSourceList>
-										<ActiveSource Name="Grass Footstep 1" ID="{74A87CF1-CBE2-4E4C-B852-7B9C16AC903B}" Platform="Linked"/>
+										<ActiveSource Name="Grass Footsteps#01" ID="{366F7E61-22B0-41EA-928C-246B52DE26C8}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Grass Footsteps#01_04" ID="{150306C2-E64F-455F-862E-69ED14A904A9}" ShortID="610232975">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Grass Footsteps#01" ID="{C461E1F9-27DD-4767-8188-EE7BBADF1D29}" ShortID="704451495">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="46.3068305408583"/>
+												<Property Name="TrimEnd" Type="Real64" Value="46.8368284215692"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Grass Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="236262193"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Grass Footsteps#01" ID="{C461E1F9-27DD-4767-8188-EE7BBADF1D29}" Platform="Linked"/>
 									</ActiveSourceList>
 								</Sound>
 							</ChildrenList>
@@ -251,7 +265,7 @@
 										<Path2D Name="Footsteps_Grass_Path" ID="{34DF9E47-30AF-4458-9EC0-C0C74BF23D1E}">
 											<PointList>
 												<Point>
-													<XPos>-0</XPos>
+													<XPos>0</XPos>
 													<YPos>64.64968</YPos>
 													<Flags>12</Flags>
 													<Time>0</Time>
@@ -261,6 +275,145 @@
 									</ChildrenList>
 								</Position>
 							</PositioningInfo>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="Footsteps_Dirt" ID="{1E126DF6-0DC7-4639-86F6-D633ECCBA7B6}" ShortID="653551610">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Dirt Footsteps#01" ID="{C1A0A006-F59C-40FF-AD14-56D824C1EB3E}" ShortID="454365310">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt Footsteps#01" ID="{18F8BAF6-35AD-4937-81F9-3C7FFBBD8D96}" ShortID="781943041">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="17.7673013173523"/>
+												<Property Name="TrimEnd" Type="Real64" Value="18.2289402992236"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Dirt Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="24198468"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt Footsteps#01" ID="{18F8BAF6-35AD-4937-81F9-3C7FFBBD8D96}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dirt Footsteps#01_01" ID="{60EC149D-7E1E-4176-BC4F-CAE23CCADFBB}" ShortID="24446933">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt Footsteps#01" ID="{9BF055A0-90AF-44FC-B6FB-D7E6E65368E3}" ShortID="24198468">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="38.23600260651"/>
+												<Property Name="TrimEnd" Type="Real64" Value="38.7440374659564"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Dirt Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="97083142"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt Footsteps#01" ID="{9BF055A0-90AF-44FC-B6FB-D7E6E65368E3}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dirt Footsteps#01_02" ID="{74766692-117A-49BE-8C31-1625C67D1E48}" ShortID="30921201">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt Footsteps#01" ID="{D71413E0-753A-4FCD-97D4-518F38EB0C28}" ShortID="173905970">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="21.2504718262967"/>
+												<Property Name="TrimEnd" Type="Real64" Value="21.6471565795631"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Dirt Footsteps#01.wav</AudioFile>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt Footsteps#01" ID="{D71413E0-753A-4FCD-97D4-518F38EB0C28}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dirt Footsteps#01_03" ID="{BE67CBE4-2F65-483D-A747-6E2DDC69D9E9}" ShortID="46233250">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt Footsteps#01" ID="{6A2B5ED5-B29D-4F52-AA22-1C08DAF39E04}" ShortID="97083142">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="67.885674803137"/>
+												<Property Name="TrimEnd" Type="Real64" Value="68.1661121075904"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Dirt Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="197021754"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt Footsteps#01" ID="{6A2B5ED5-B29D-4F52-AA22-1C08DAF39E04}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Dirt Footsteps#01_04" ID="{BB33609B-E149-4929-82E3-92DC890F93F1}" ShortID="205365593">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Dirt Footsteps#01" ID="{71D33B24-6F18-49CB-BCA6-54C11C7F0EF2}" ShortID="197021754">
+											<PropertyList>
+												<Property Name="TrimBegin" Type="Real64" Value="67.8481714687638"/>
+												<Property Name="TrimEnd" Type="Real64" Value="68.2866125118478"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Dirt Footsteps#01.wav</AudioFile>
+											<ConvertedFileIDList>
+												<File ID="781943041"/>
+											</ConvertedFileIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Dirt Footsteps#01" ID="{71D33B24-6F18-49CB-BCA6-54C11C7F0EF2}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
 						</RandomSequenceContainer>
 					</ChildrenList>
 				</ActorMixer>
@@ -310,12 +463,85 @@
 							</ReferenceList>
 							<ChildrenList>
 								<AudioFileSource Name="Coin Pickup_V1" ID="{3D10AFB7-AD80-4640-B142-3A0B97C23FFA}" ShortID="652019439">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="4.33993865403305E-02"/>
+										<Property Name="TrimEnd" Type="Real64" Value="0.631937408892129"/>
+									</PropertyList>
 									<Language>SFX</Language>
 									<AudioFile>Coin Pickup_V1.wav</AudioFile>
 								</AudioFileSource>
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Coin Pickup_V1" ID="{3D10AFB7-AD80-4640-B142-3A0B97C23FFA}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="Checkpoint" ID="{9402DE3D-C50A-4A67-8938-E71B6EEC11CD}" ShortID="744968766">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-12</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="Health Pickup" ID="{83846824-FF0A-4672-8528-0F3C8BC1F81D}" ShortID="714095219">
+									<PropertyList>
+										<Property Name="FadeOutDuration" Type="Real64" Value="4.86547619047619E-02"/>
+										<Property Name="TrimEnd" Type="Real64" Value="1.45660193452381"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>Health Pickup.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="Health Pickup" ID="{83846824-FF0A-4672-8528-0F3C8BC1F81D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Music" ID="{3BDE4506-58E1-469A-AC04-B822952BD58A}" ShortID="468956191">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TOTS_JungleMusic_V2" ID="{F4E05138-D363-4FB0-9CF9-1CCBE8B875F4}" ShortID="612702246">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-29</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TOTS_JungleMusic_V2" ID="{D09818B4-05EB-4700-977D-152EECD679AC}" ShortID="615168643">
+									<Language>SFX</Language>
+									<AudioFile>TOTS_JungleMusic_V2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TOTS_JungleMusic_V2" ID="{D09818B4-05EB-4700-977D-152EECD679AC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>
