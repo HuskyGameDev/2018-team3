@@ -19,36 +19,62 @@
 				<Event Id="612075679" Name="Checkpoint" ObjectPath="\Events\Default Work Unit\Checkpoint"/>
 				<Event Id="2752428610" Name="CoinPickup" ObjectPath="\Events\Default Work Unit\CoinPickup"/>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep"/>
+				<Event Id="1840676193" Name="Footstep_Dirt" ObjectPath="\Events\Default Work Unit\Footstep_Dirt"/>
 				<Event Id="2397454474" Name="JungleAmbience" ObjectPath="\Events\Default Work Unit\JungleAmbience"/>
+				<Event Id="3029536662" Name="Music_Jungle" ObjectPath="\Events\Default Work Unit\Music_Jungle"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
+				<File Id="24198468" Language="SFX">
+					<ShortName>Dirt Footsteps#01.wav</ShortName>
+					<Path>SFX\Dirt Footsteps#01_1F7A61B4.wem</Path>
+				</File>
+				<File Id="97083142" Language="SFX">
+					<ShortName>Dirt Footsteps#01.wav</ShortName>
+					<Path>SFX\Dirt Footsteps#01_FBE882B4.wem</Path>
+				</File>
+				<File Id="173905970" Language="SFX">
+					<ShortName>Dirt Footsteps#01.wav</ShortName>
+					<Path>SFX\Dirt Footsteps#01_DB8040B7.wem</Path>
+				</File>
+				<File Id="197021754" Language="SFX">
+					<ShortName>Dirt Footsteps#01.wav</ShortName>
+					<Path>SFX\Dirt Footsteps#01_C99955B4.wem</Path>
+				</File>
 				<File Id="236262193" Language="SFX">
 					<ShortName>Grass Footsteps#01.wav</ShortName>
-					<Path>SFX\Grass Footsteps#01_A75DE23F.wem</Path>
+					<Path>SFX\Grass Footsteps#01_F28DD493.wem</Path>
 				</File>
 				<File Id="385288777" Language="SFX">
 					<ShortName>Grass Footsteps#01.wav</ShortName>
-					<Path>SFX\Grass Footsteps#01_12F0BEC5.wem</Path>
+					<Path>SFX\Grass Footsteps#01_895FF704.wem</Path>
+				</File>
+				<File Id="615168643" Language="SFX">
+					<ShortName>TOTS_JungleMusic_V2.wav</ShortName>
+					<Path>SFX\TOTS_JungleMusic_V2_F17FB28C.wem</Path>
 				</File>
 				<File Id="652019439" Language="SFX">
 					<ShortName>Coin Pickup_V1.wav</ShortName>
-					<Path>SFX\Coin Pickup_V1_241F3587.wem</Path>
+					<Path>SFX\Coin Pickup_V1_587492FE.wem</Path>
 				</File>
 				<File Id="676835150" Language="SFX">
 					<ShortName>Grass Footsteps#01.wav</ShortName>
-					<Path>SFX\Grass Footsteps#01_68F55D65.wem</Path>
+					<Path>SFX\Grass Footsteps#01_C3AF6454.wem</Path>
 				</File>
 				<File Id="704451495" Language="SFX">
 					<ShortName>Grass Footsteps#01.wav</ShortName>
-					<Path>SFX\Grass Footsteps#01_7AF9F95A.wem</Path>
+					<Path>SFX\Grass Footsteps#01_3EB13E43.wem</Path>
 				</File>
 				<File Id="714095219" Language="SFX">
 					<ShortName>Health Pickup.wav</ShortName>
-					<Path>SFX\Health Pickup_7F235479.wem</Path>
+					<Path>SFX\Health Pickup_C419ACF8.wem</Path>
+				</File>
+				<File Id="781943041" Language="SFX">
+					<ShortName>Dirt Footsteps#01.wav</ShortName>
+					<Path>SFX\Dirt Footsteps#01_D93C6DFE.wem</Path>
 				</File>
 				<File Id="826811789" Language="SFX">
 					<ShortName>Grass Footsteps#01.wav</ShortName>
-					<Path>SFX\Grass Footsteps#01_B023DD7C.wem</Path>
+					<Path>SFX\Grass Footsteps#01_D6C7B26A.wem</Path>
 				</File>
 				<File Id="863570735" Language="SFX">
 					<ShortName>Jungle Ambience_V2.wav</ShortName>

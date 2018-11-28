@@ -479,7 +479,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-8</Value>
+										<Value>-12</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -503,6 +503,45 @@
 							</ChildrenList>
 							<ActiveSourceList>
 								<ActiveSource Name="Health Pickup" ID="{83846824-FF0A-4672-8528-0F3C8BC1F81D}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</ActorMixer>
+				<ActorMixer Name="Music" ID="{3BDE4506-58E1-469A-AC04-B822952BD58A}" ShortID="468956191">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Sound Name="TOTS_JungleMusic_V2" ID="{F4E05138-D363-4FB0-9CF9-1CCBE8B875F4}" ShortID="612702246">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-29</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{C0850C93-C0E2-40FB-9D5C-CC8BFB980E98}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="TOTS_JungleMusic_V2" ID="{D09818B4-05EB-4700-977D-152EECD679AC}" ShortID="615168643">
+									<Language>SFX</Language>
+									<AudioFile>TOTS_JungleMusic_V2.wav</AudioFile>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="TOTS_JungleMusic_V2" ID="{D09818B4-05EB-4700-977D-152EECD679AC}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 					</ChildrenList>

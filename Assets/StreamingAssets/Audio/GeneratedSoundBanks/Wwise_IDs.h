@@ -16,7 +16,9 @@ namespace AK
         static const AkUniqueID CHECKPOINT = 612075679U;
         static const AkUniqueID COINPICKUP = 2752428610U;
         static const AkUniqueID FOOTSTEP = 1866025847U;
+        static const AkUniqueID FOOTSTEP_DIRT = 1840676193U;
         static const AkUniqueID JUNGLEAMBIENCE = 2397454474U;
+        static const AkUniqueID MUSIC_JUNGLE = 3029536662U;
     } // namespace EVENTS
 
     namespace BANKS

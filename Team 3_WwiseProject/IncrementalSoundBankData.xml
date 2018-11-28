@@ -17,12 +17,12 @@
 		<Banks>
 			<Language ID="393239870">
 				<File Name="Init" Hash="403170349" Timestamp="1540942402"/>
-				<File Name="JungleBank" Hash="514232392" Timestamp="1540942402"/>
+				<File Name="JungleBank" Hash="3273020906" Timestamp="1543363638"/>
 			</Language>
 		</Banks>
 		<XMLInfo>
 			<Language ID="-1">
-				<File Name="" Hash="3763241546" Timestamp="1540942402"/>
+				<File Name="" Hash="3997818217" Timestamp="1543363638"/>
 			</Language>
 		</XMLInfo>
 	</Platform>
