@@ -21,16 +21,17 @@ public class DamageScript : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            GameManager gameManager = FindObjectOfType<GameManager>();
-            gameManager.RemoveHearts(1);
-			if (gameManager.GetHearts() == 0) {
-				gameManager.RemoveOneUp();
-				if (gameManager.GetOneUp() == 0) {
-					CloseGame();
-				}
-				gameManager.AddHearts(3);
-				player.position = spawn;
-			}
+          GameManager gameManager = FindObjectOfType<GameManager>();
+          gameManager.RemoveHearts(1);
+          if (gameManager.GetHearts() == 0) {
+            gameManager.RemoveOneUp();
+            if (gameManager.GetOneUp() == 0) {
+              CloseGame();
+            }
+            gameManager.AddHearts(3);
+            player.position = spawn;
+          }
+            gameManager.ShowDialog("hahahaha! I am Foxtail and you are a stupid tiger for trying to come out in my jungle!");
         }
     }
 	
