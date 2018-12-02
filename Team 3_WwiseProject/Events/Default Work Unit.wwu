@@ -110,6 +110,55 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Button" ID="{2760AEDF-AA31-491F-9E69-A248461D4787}">
+					<ChildrenList>
+						<Action Name="" ID="{15FA409B-A580-44DC-930E-816C8DEA8300}" ShortID="442296581">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button Click" ID="{3CCA803E-797B-4E24-AD64-EFF25A2CC451}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{9DE80369-2499-40C1-931D-774D301B4130}" ShortID="526777204">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Button Ring" ID="{301BE424-4226-4D54-BE34-07CAEDC83038}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Jump" ID="{B5306ED7-8742-4348-9F2E-3FFFD3EB4024}">
+					<ChildrenList>
+						<Action Name="" ID="{8A7F65A6-A16D-43EC-9029-67AD6002F258}" ShortID="641554178">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump Woosh" ID="{0B6F7320-D9A2-49D4-B250-564A667A049E}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{76E8743A-5550-444A-88C2-87B9056D1C36}" ShortID="197740662">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="1"/>
+								<Property Name="Delay" Type="Real64" Value="0.02"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Jump_Lift" ID="{DA581088-8070-4CD7-8637-1EA64879FA1B}" WorkUnitID="{495ADE7E-D2B0-4576-BA2F-52B516657426}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
