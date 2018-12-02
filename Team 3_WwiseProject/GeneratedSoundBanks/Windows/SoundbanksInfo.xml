@@ -16,26 +16,15 @@
 			<ShortName>JungleBank</ShortName>
 			<Path>JungleBank.bnk</Path>
 			<IncludedEvents>
+				<Event Id="977454165" Name="Button" ObjectPath="\Events\Default Work Unit\Button"/>
 				<Event Id="612075679" Name="Checkpoint" ObjectPath="\Events\Default Work Unit\Checkpoint"/>
 				<Event Id="2752428610" Name="CoinPickup" ObjectPath="\Events\Default Work Unit\CoinPickup"/>
 				<Event Id="1866025847" Name="Footstep" ObjectPath="\Events\Default Work Unit\Footstep"/>
-				<Event Id="1840676193" Name="Footstep_Dirt" ObjectPath="\Events\Default Work Unit\Footstep_Dirt"/>
+				<Event Id="3833651337" Name="Jump" ObjectPath="\Events\Default Work Unit\Jump"/>
 				<Event Id="2397454474" Name="JungleAmbience" ObjectPath="\Events\Default Work Unit\JungleAmbience"/>
 				<Event Id="3029536662" Name="Music_Jungle" ObjectPath="\Events\Default Work Unit\Music_Jungle"/>
 			</IncludedEvents>
 			<IncludedMemoryFiles>
-				<File Id="24198468" Language="SFX">
-					<ShortName>Dirt Footsteps#01.wav</ShortName>
-					<Path>SFX\Dirt Footsteps#01_1F7A61B4.wem</Path>
-				</File>
-				<File Id="97083142" Language="SFX">
-					<ShortName>Dirt Footsteps#01.wav</ShortName>
-					<Path>SFX\Dirt Footsteps#01_FBE882B4.wem</Path>
-				</File>
-				<File Id="173905970" Language="SFX">
-					<ShortName>Dirt Footsteps#01.wav</ShortName>
-					<Path>SFX\Dirt Footsteps#01_DB8040B7.wem</Path>
-				</File>
 				<File Id="197021754" Language="SFX">
 					<ShortName>Dirt Footsteps#01.wav</ShortName>
 					<Path>SFX\Dirt Footsteps#01_C99955B4.wem</Path>
@@ -48,9 +37,17 @@
 					<ShortName>Grass Footsteps#01.wav</ShortName>
 					<Path>SFX\Grass Footsteps#01_895FF704.wem</Path>
 				</File>
+				<File Id="491135512" Language="SFX">
+					<ShortName>Button Ring.wav</ShortName>
+					<Path>SFX\Button Ring_453BFE35.wem</Path>
+				</File>
 				<File Id="615168643" Language="SFX">
 					<ShortName>TOTS_JungleMusic_V2.wav</ShortName>
 					<Path>SFX\TOTS_JungleMusic_V2_F17FB28C.wem</Path>
+				</File>
+				<File Id="630086569" Language="SFX">
+					<ShortName>StickSwooshTake01.wav</ShortName>
+					<Path>SFX\StickSwooshTake01_60CB7DBE.wem</Path>
 				</File>
 				<File Id="652019439" Language="SFX">
 					<ShortName>Coin Pickup_V1.wav</ShortName>
@@ -79,6 +76,10 @@
 				<File Id="863570735" Language="SFX">
 					<ShortName>Jungle Ambience_V2.wav</ShortName>
 					<Path>SFX\Jungle Ambience_V2_31D22EEE.wem</Path>
+				</File>
+				<File Id="1031954601" Language="SFX">
+					<ShortName>Button Click.wav</ShortName>
+					<Path>SFX\Button Click_D72BF4B3.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
