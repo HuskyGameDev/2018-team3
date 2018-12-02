@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 
 public class LightPuzzleManager : MonoBehaviour
@@ -58,8 +59,11 @@ public class LightPuzzleManager : MonoBehaviour
     private LightPuzzlePressurePlate plate25;
 
     private LightPuzzlePressurePlate[] plates;
-
-    public bool success = false;
+    private bool puzzleSolved = false;
+    private int initialSelection = -1;
+    private bool initialStateReset = false;
+    private GameManager gameManager;
+    private int dialogStep = -1;
 
     // Use this for initialization
     void Start()
@@ -94,11 +98,21 @@ public class LightPuzzleManager : MonoBehaviour
                    plate11, plate12, plate13, plate14, plate15, plate16, plate17, plate18, plate19, plate20,
                    plate21, plate22, plate23, plate24, plate25
                  };
+
+        gameManager = FindObjectOfType<GameManager>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (!initialStateReset)
+        {
+            initialStateReset = true;
+
+            initialSelection = new System.Random().Next(3);
+            ResetBoard(initialSelection);
+        }
+
         var success = true;
         for (int i = 0; i < plates.Length; i++)
         {
@@ -108,23 +122,100 @@ public class LightPuzzleManager : MonoBehaviour
                 break;
             }
         }
-        this.success = success;
+        this.puzzleSolved = success;
+
+        switch(dialogStep)
+        {
+            case 0:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("You have discovered the light puzzle! Turn off all the lights to get a key fragment.");
+                    dialogStep++;
+                }
+                break;
+            case 1:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("If you want to reset the lights, stand on the red pressure plate.");
+                    dialogStep++;
+                }
+                break;
+            case 2:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("I'm sure you'll have to do that a lot. I doubt you can even get this key fragment.");
+                    dialogStep = -1;
+                }
+                break;
+            case 3:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("Drat! You may have won this time, but you'll never get the treasure!");
+                    dialogStep = -1;
+                }
+                break;
+        }
 
         if (success)
         {
-            Debug.Log("Success!");
+            dialogStep = 3;
+            // TODO: increase gameManager key fragments
         }
     }
 
     private void OnTriggerEnter(Collider other)
+    {
+        ResetBoard(initialSelection);
+    }
+
+    private void ResetBoard(int board)
     {
         for (int i = 0; i < plates.Length; i++)
         {
             plates[i].SetState(false);
         }
 
-        plates[6].SetState(true);
-        plates[13].SetState(true);
-        plates[23].SetState(true);
+        if (board == 0)
+        {
+            plates[0].SetState(true);
+            plates[6].SetState(true);
+            plates[12].SetState(true);
+            plates[18].SetState(true);
+            plates[24].SetState(true);
+        }
+        else if (board == 1)
+        {
+            plates[1].SetState(true);
+            plates[2].SetState(true);
+            plates[3].SetState(true);
+            plates[4].SetState(true);
+            plates[8].SetState(true);
+            plates[13].SetState(true);
+        }
+        else if (board == 2)
+        {
+            plates[0].SetState(true);
+            plates[2].SetState(true);
+            plates[5].SetState(true);
+            plates[7].SetState(true);
+            plates[10].SetState(true);
+            plates[13].SetState(true);
+            plates[14].SetState(true);
+            plates[22].SetState(true);
+            plates[23].SetState(true);
+            plates[24].SetState(true);
+        }
+    }
+
+    public void PlayerEnteredPuzzleArea()
+    {
+        if (puzzleSolved)
+        {
+            gameManager.ShowDialog("You have already solved this puzzle! Go find another key fragment somewhere else.");
+        }
+        else
+        {
+            dialogStep = 0;
+        }
     }
 }

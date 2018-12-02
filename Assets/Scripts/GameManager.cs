@@ -196,6 +196,11 @@ public class GameManager : MonoBehaviour {
         InvokeRepeating("RenderDialogText", 0.0f, DialogTextRenderRate);
     }
 
+    public bool IsShowingDialog()
+    {
+        return DialogBackground.activeSelf;
+    }
+
     private void RenderDialogText()
     {
         DialogText.text += remainingDiaglogText.Substring(0, 1);
