@@ -11,18 +11,29 @@ public class MemoryGame : MonoBehaviour {
     private int[] order = new int[9];
     private bool active = false;
 
+    private float time;
+    private int pointInOrder;
+    private int gameIterations;
+
 	// Use this for initialization
 	void Start () {
         resetObjects();
     }
-	
+	//TODO: dynamic game iterations
+    //TODO: state machine
 	// Update is called once per frame
 	void Update ()
     {
 		if(active)
         {
             //game code here
-            
+            if((Time.realtimeSinceStartup - time) > 5)
+            {
+                time = Time.realtimeSinceStartup;
+                resetObjects();
+                if (pointInOrder >= order.Length) generateOrder();
+                objects[order[pointInOrder++]].GetComponent<MeshRenderer>().material = lit;
+            }
         }
 	}
 
@@ -31,6 +42,8 @@ public class MemoryGame : MonoBehaviour {
         if (other.tag == "Player")
         {
             active = true;
+            generateOrder();
+            time = Time.realtimeSinceStartup;
         }
     }
 
@@ -53,6 +66,7 @@ public class MemoryGame : MonoBehaviour {
 
     private void generateOrder()
     {
+        pointInOrder = 0;
         for (int i = 0; i < order.Length; i++)
         {
             int r = Random.Range(0, 15);
