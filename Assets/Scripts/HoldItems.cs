@@ -67,7 +67,7 @@
          ball.GetComponent<Rigidbody>().useGravity = true;
 		  
          // apply velocity on throwing
-         ball.GetComponent<Rigidbody>().velocity = transform.forward * throwSpeed;
+         ball.GetComponent<Rigidbody>().velocity = guide.forward * throwSpeed;
 		 
 		 // re-enable collisions
 		 ball.GetComponent<SphereCollider>().enabled = true;

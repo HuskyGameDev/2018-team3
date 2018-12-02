@@ -33,6 +33,23 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 		
 	}
+	
+	public void SetOneUps(int oneups) {
+		current1Ups = oneups;
+		OneUpText.text = current1Ups.ToString() + " x ";
+	}
+	
+	public void RemoveOneUp() {
+		SetOneUps(current1Ups - 1);
+	}
+	
+	public void AddOneUp() {
+		SetOneUps(current1Ups + 1);
+	}
+	
+	public int GetOneUp() {
+		return current1Ups;
+	}
 
     public void RemoveCoins(int coins)
     {
@@ -92,7 +109,8 @@ public class GameManager : MonoBehaviour {
             }
             if (currentHearts < 1 && previousHearts >= 1)
             {
-                StartBlink(1);
+				// we don't actually want the last heart to blink away, because the player died
+                //StartBlink(1);
             }
         }
     }
