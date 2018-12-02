@@ -3035,6 +3035,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df9e92f2d63b47641b3e305d5c69e12e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1162611943}
+  spawn: {x: 0, y: 0, z: 0}
 --- !u!65 &1636732075
 BoxCollider:
   m_ObjectHideFlags: 0
