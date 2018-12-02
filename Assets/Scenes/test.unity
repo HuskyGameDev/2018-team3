@@ -1562,7 +1562,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1699857788810474, guid: 737c6393f86446b44968cd9c48f74fd6, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 737c6393f86446b44968cd9c48f74fd6, type: 2}
@@ -2551,7 +2551,7 @@ MonoBehaviour:
   DialogBackground: {fileID: 210509436}
   DialogHead: {fileID: 1794270186}
   DialogText: {fileID: 1936424617}
-  DialogTextRenderRate: 0.1
+  DialogTextRenderRate: 0.03
   DialogTextShowDuration: 3
   HeartBlinkRate: 0.1
   HeartBlinkCount: 15
