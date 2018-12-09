@@ -7,12 +7,14 @@ public class GameManager : MonoBehaviour {
     public int currentCoins = 0;
     public int currentHearts = 3;
     public int current1Ups = 4;
+    public int currentKeyFragments = 0;
 
     public GameObject Heart1;
     public GameObject Heart2;
     public GameObject Heart3;
     public Text CoinText;
     public Text OneUpText;
+    public Text KeyFragmentText;
     public GameObject DialogBackground;
     public GameObject DialogHead;
     public Text DialogText;
@@ -134,6 +136,23 @@ public class GameManager : MonoBehaviour {
     public int GetHearts()
     {
         return currentHearts;
+    }
+
+    public void SetKeyFragments(int fragments)
+    {
+        this.currentKeyFragments = fragments;
+        KeyFragmentText.text = "x " + fragments;
+    }
+
+    public void AddOneKeyFragment()
+    {
+        SetKeyFragments(currentKeyFragments + 1);
+        AkSoundEngine.PostEvent("Checkpoint", this.gameObject);
+    }
+
+    public int GetFragments()
+    {
+        return this.currentKeyFragments;
     }
 
     private void StartBlink(int heart)

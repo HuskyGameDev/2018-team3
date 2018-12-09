@@ -122,7 +122,6 @@ public class LightPuzzleManager : MonoBehaviour
                 break;
             }
         }
-        this.puzzleSolved = success;
 
         switch(dialogStep)
         {
@@ -156,11 +155,13 @@ public class LightPuzzleManager : MonoBehaviour
                 break;
         }
 
-        if (success)
+        if (success && !this.puzzleSolved)
         {
             dialogStep = 3;
-            // TODO: increase gameManager key fragments
+            gameManager.AddOneKeyFragment();
         }
+
+        this.puzzleSolved = this.puzzleSolved || success;
     }
 
     private void OnTriggerEnter(Collider other)

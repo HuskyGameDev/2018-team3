@@ -40,6 +40,7 @@ public class LightPuzzlePressurePlate : MonoBehaviour
 
             transform.Translate(0, -.1f, 0);
             ToggleState();
+            AkSoundEngine.PostEvent("Button", this.gameObject);
             if (top != null)
             {
                 top.GetComponent<LightPuzzlePressurePlate>().ToggleState();
@@ -82,5 +83,6 @@ public class LightPuzzlePressurePlate : MonoBehaviour
     {
         transform.Translate(0, .1f, 0);
         isColliding = false;
+        AkSoundEngine.PostEvent("Button", this.gameObject);
     }
 }
