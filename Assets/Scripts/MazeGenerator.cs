@@ -7,7 +7,7 @@ using System.Collections;
 using System.Collections.Generic;
 public class MazeGenerator : MonoBehaviour
 {
-    public int width, height;
+    public int width, height, scaleX, scaleY, scaleZ;
     public Material brick;
     private int[,] Maze;
     private List<Vector3> pathMazes = new List<Vector3>();
@@ -65,10 +65,12 @@ public class MazeGenerator : MonoBehaviour
                 {
                     MazeString = MazeString + "X";  // added to create String
                     ptype = GameObject.CreatePrimitive(PrimitiveType.Cube);
-                    ptype.transform.position = new Vector3(i * ptype.transform.localScale.x, 0, j * ptype.transform.localScale.z);
+                    ptype.transform.localScale += new Vector3(scaleX, scaleY, scaleZ);
+                   
 
                     if (brick != null) { ptype.GetComponent<Renderer>().material = brick; }
                     ptype.transform.parent = transform;
+                    ptype.transform.Translate((float)463.53, (float)0.6, (float)256.26);
                 }
                 else if (Maze[i, j] == 0)
                 {
@@ -79,6 +81,7 @@ public class MazeGenerator : MonoBehaviour
             MazeString = MazeString + "\n";  // added to create String
         }
         print(MazeString);  // added to create String
+        
     }
 
     // =======================================
