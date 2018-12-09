@@ -73,7 +73,28 @@ public class TutorialAreaDialogManager : MonoBehaviour
             case 7:
                 if (!gameManager.IsShowingDialog())
                 {
-                    gameManager.ShowDialog("You don't?");
+                    gameManager.ShowDialog("You don't? Oh. Well let me refresh your memory. I'm your worst nightmare.");
+                    dialogStep++;
+                }
+                break;
+            case 8:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("I'll make sure you never get that treasure hidden inside the temple!");
+                    dialogStep++;
+                }
+                break;
+            case 9:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("You'd have to get all five hidden key fragments first to unlock the gate and -");
+                    dialogStep++;
+                }
+                break;
+            case 10:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("Oh. I shouldn't have told you that.");
                     dialogStep = -1;
                 }
                 break;
