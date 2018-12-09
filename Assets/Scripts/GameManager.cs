@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour {
     private int heart3BlinkState = 0;
 
     public float DialogTextRenderRate = 0.1f;
-    public float DialogTextShowDuration = 3.0f;
+    public float DialogTextShowDuration = 4.0f;
     public float HeartBlinkRate = 0.1f;
     public int HeartBlinkCount = 15;
 
