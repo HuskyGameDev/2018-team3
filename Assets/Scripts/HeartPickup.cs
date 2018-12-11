@@ -21,7 +21,6 @@ public class HeartPickup : MonoBehaviour {
             GameManager gameManager = FindObjectOfType<GameManager>();
             if (gameManager.GetHearts() < 3)
             {
-                Debug.Log("Do Heart Pickup");
                 gameManager.PickUpOneHeart();
                 Destroy(gameObject);
             }

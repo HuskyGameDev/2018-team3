@@ -7,12 +7,14 @@ public class GameManager : MonoBehaviour {
     public int currentCoins = 0;
     public int currentHearts = 3;
     public int current1Ups = 4;
+    public int currentKeyFragments = 0;
 
     public GameObject Heart1;
     public GameObject Heart2;
     public GameObject Heart3;
     public Text CoinText;
     public Text OneUpText;
+    public Text KeyFragmentText;
     public GameObject DialogBackground;
     public GameObject DialogHead;
     public Text DialogText;
@@ -22,7 +24,7 @@ public class GameManager : MonoBehaviour {
     private int heart3BlinkState = 0;
 
     public float DialogTextRenderRate = 0.1f;
-    public float DialogTextShowDuration = 3.0f;
+    public float DialogTextShowDuration = 4.0f;
     public float HeartBlinkRate = 0.1f;
     public int HeartBlinkCount = 15;
 
@@ -43,6 +45,23 @@ public class GameManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		
+	}
+	
+	public void SetOneUps(int oneups) {
+		current1Ups = oneups;
+		OneUpText.text = current1Ups.ToString() + " x ";
+	}
+	
+	public void RemoveOneUp() {
+		SetOneUps(current1Ups - 1);
+	}
+	
+	public void AddOneUp() {
+		SetOneUps(current1Ups + 1);
+	}
+	
+	public int GetOneUp() {
+		return current1Ups;
 	}
 
     public void RemoveCoins(int coins)
@@ -103,7 +122,8 @@ public class GameManager : MonoBehaviour {
             }
             if (currentHearts < 1 && previousHearts >= 1)
             {
-                StartBlink(1);
+				// we don't actually want the last heart to blink away, because the player died
+                //StartBlink(1);
             }
         }
     }
@@ -116,6 +136,23 @@ public class GameManager : MonoBehaviour {
     public int GetHearts()
     {
         return currentHearts;
+    }
+
+    public void SetKeyFragments(int fragments)
+    {
+        this.currentKeyFragments = fragments;
+        KeyFragmentText.text = "x " + fragments;
+    }
+
+    public void AddOneKeyFragment()
+    {
+        SetKeyFragments(currentKeyFragments + 1);
+        AkSoundEngine.PostEvent("Checkpoint", this.gameObject);
+    }
+
+    public int GetFragments()
+    {
+        return this.currentKeyFragments;
     }
 
     private void StartBlink(int heart)
@@ -176,6 +213,11 @@ public class GameManager : MonoBehaviour {
         DialogText.gameObject.SetActive(true);
 
         InvokeRepeating("RenderDialogText", 0.0f, DialogTextRenderRate);
+    }
+
+    public bool IsShowingDialog()
+    {
+        return DialogBackground.activeSelf;
     }
 
     private void RenderDialogText()
