@@ -4,36 +4,59 @@ using UnityEngine;
 
 public class MemoryGame : MonoBehaviour {
 
+    /* Public variables for use in editor */
     public GameObject[] objects = new GameObject[16];
-    //public GameObject test;
     public Material unlit;
     public Material lit;
-    private int[] order = new int[9];
-    private bool active = false;
 
+    /* Variables for keeping tabs of the game's general state */
     private float time;
+    enum State { inactive, initialize, display, player, done };
+    private State state = State.inactive;
+    private int[] order = new int[9];
+
+    /* Variables for keepting tabs of game's state during initialization */
+
+    /* Variables for keeping tabs of game's state while displaying current order */
     private int pointInOrder;
-    private int gameIterations;
+    private float delay = 1;
+     
+    /* Variables for player's current progress while waiting for player input*/
+    private int[] playerInputs = new int[9];
+    private int inputsCount;
+    private int expectedInputs;
 
 	// Use this for initialization
 	void Start () {
         resetObjects();
     }
-	//TODO: dynamic game iterations
-    //TODO: state machine
+
 	// Update is called once per frame
 	void Update ()
     {
-		if(active)
+		switch(state)
         {
-            //game code here
-            if((Time.realtimeSinceStartup - time) > 5)
-            {
-                time = Time.realtimeSinceStartup;
-                resetObjects();
-                if (pointInOrder >= order.Length) generateOrder();
-                objects[order[pointInOrder++]].GetComponent<MeshRenderer>().material = lit;
-            }
+            case State.inactive: //player has not entered game area
+                break;
+            case State.initialize: //player has entered game area, initialize game
+                //TODO: display text
+                break;
+            case State.display: //light up the tiles in a specified order
+                //TODO: light up dynamic sequence of tiles over time
+                if((Time.realtimeSinceStartup - time) > 5)
+                {
+                    time = Time.realtimeSinceStartup;
+                    resetObjects();
+                    if (pointInOrder >= order.Length) generateOrder();
+                    objects[order[pointInOrder++]].GetComponent<MeshRenderer>().material = lit;
+                }
+                break;
+            case State.player: //await player input
+                //TODO: link slave tiles to master
+                //TODO: check player input
+                break;
+            case State.done: //player completed game and received key
+                break;
         }
 	}
 
@@ -41,7 +64,7 @@ public class MemoryGame : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            active = true;
+            if (state != State.done) state = State.initialize;
             generateOrder();
             time = Time.realtimeSinceStartup;
         }
@@ -51,7 +74,7 @@ public class MemoryGame : MonoBehaviour {
     {
         if (other.tag == "Player")
         {
-            active = false;
+            if (state != State.done) state = State.inactive;
             resetObjects();
         }
     }
