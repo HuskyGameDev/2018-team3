@@ -62,6 +62,7 @@ public class PlayerController : MonoBehaviour {
                 hasDoubleJumped = true;
             }
             moveDirection.y = jumpForce;
+            AkSoundEngine.PostEvent("Jump", this.gameObject);
         }
 
         // apply gravity
