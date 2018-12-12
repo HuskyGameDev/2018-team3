@@ -19,22 +19,27 @@ public class MemoryGame : MonoBehaviour {
 
     /* Variables for keeping tabs of game's state while displaying current order */
     private int pointInOrder;
-    private float delay = 1;
-     
+    private const float delay = 1;
+
     /* Variables for player's current progress while waiting for player input*/
     private int[] playerInputs = new int[9];
-    private int inputsCount;
-    private int expectedInputs;
+    private int inputsCount = 0;
+    private int expectedInputs = 3;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
+        for (int i = 0; i < objects.Length; i++)
+        {
+            MemTileCollider m = objects[i].GetComponent<MemTileCollider>();
+            m.setID(i);
+        }
         resetObjects();
     }
 
-	// Update is called once per frame
-	void Update ()
+    // Update is called once per frame
+    void Update()
     {
-		switch(state)
+        switch (state)
         {
             case State.inactive: //player has not entered game area
                 break;
@@ -43,28 +48,24 @@ public class MemoryGame : MonoBehaviour {
                 break;
             case State.display: //light up the tiles in a specified order
                 //TODO: light up dynamic sequence of tiles over time
-                if((Time.realtimeSinceStartup - time) > 5)
-                {
-                    time = Time.realtimeSinceStartup;
-                    resetObjects();
-                    if (pointInOrder >= order.Length) generateOrder();
-                    objects[order[pointInOrder++]].GetComponent<MeshRenderer>().material = lit;
-                }
+                display();
                 break;
             case State.player: //await player input
                 //TODO: link slave tiles to master
                 //TODO: check player input
+                player();
                 break;
             case State.done: //player completed game and received key
                 break;
         }
-	}
+    }
 
+    /* Collision handlers */
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            if (state != State.done) state = State.initialize;
+            if (state != State.done) state = State.display;
             generateOrder();
             time = Time.realtimeSinceStartup;
         }
@@ -79,6 +80,56 @@ public class MemoryGame : MonoBehaviour {
         }
     }
 
+    /* Master state managing methods */
+    private void display()
+    {
+        
+        if ((Time.realtimeSinceStartup - time) > delay)
+        {
+            time = Time.realtimeSinceStartup;
+            resetObjects();
+            if (pointInOrder >= expectedInputs)
+            {
+                //TODO: move to player phase
+                pointInOrder = 0;
+                state = State.player;
+            }
+            else
+            {
+                objects[order[pointInOrder++]].GetComponent<MeshRenderer>().material = lit;
+            }
+        }
+    }
+
+    private void player()
+    {
+        if(expectedInputs == inputsCount)
+        {
+            bool correct = true;
+            for(int i = 0; i < expectedInputs; i++)
+            {
+                if (order[i] != playerInputs[i]) correct = false;
+            }
+            resetObjects();
+            inputsCount = 0;
+            if (correct)
+            {
+                //TODO: hold state here for ~1 second
+
+                expectedInputs++;
+                time = Time.realtimeSinceStartup;
+                state = State.display;
+            }
+            else
+            {
+
+                time = Time.realtimeSinceStartup;
+                state = State.display;
+            }
+        }
+    }
+
+    /* Helper state managing methods */
     private void resetObjects()
     {
         foreach (GameObject g in objects)
@@ -98,6 +149,17 @@ public class MemoryGame : MonoBehaviour {
                 r = Random.Range(0, 15);
             }
             order[i] = r;
+        }
+    }
+
+    /* Public methods */
+    public void receiveInput(int slaveID)
+    {
+        if (state == State.player && inputsCount < expectedInputs)
+        {
+            playerInputs[inputsCount++] = slaveID;
+            MemTileCollider m = objects[slaveID].GetComponent<MemTileCollider>();
+            m.setMaterial(lit);
         }
     }
 }

@@ -17,8 +17,21 @@ public class MemTileCollider : MonoBehaviour {
 		
 	}
 
-    void setMaterial(Material material)
+    private void OnTriggerEnter(Collider other)
     {
+        if(other.tag == "Player")
+        {
+            master.receiveInput(slaveID);
+        }
+    }
 
+    public void setID(int ID)
+    {
+        slaveID = ID;
+    }
+
+    public void setMaterial(Material m)
+    {
+        GetComponent<MeshRenderer>().material = m;
     }
 }
