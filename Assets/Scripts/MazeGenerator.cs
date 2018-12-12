@@ -66,11 +66,11 @@ public class MazeGenerator : MonoBehaviour
                     MazeString = MazeString + "X";  // added to create String
                     ptype = GameObject.CreatePrimitive(PrimitiveType.Cube);
                     ptype.transform.localScale += new Vector3(scaleX, scaleY, scaleZ);
-                   
+                    ptype.transform.position = new Vector3(i * ptype.transform.localScale.x, 0, j * ptype.transform.localScale.z);
+
 
                     if (brick != null) { ptype.GetComponent<Renderer>().material = brick; }
                     ptype.transform.parent = transform;
-                    ptype.transform.Translate((float)463.53, (float)0.6, (float)256.26);
                 }
                 else if (Maze[i, j] == 0)
                 {
