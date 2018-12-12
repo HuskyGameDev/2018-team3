@@ -3326,11 +3326,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d12c222102e04c4fa8b218416a45344, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  width: 11
-  height: 11
-  scaleX: 2
-  scaleY: 5
-  scaleZ: 2
+  width: 251
+  height: 251
+  scaleX: 3
+  scaleY: 9
+  scaleZ: 3
   brick: {fileID: 2100000, guid: 159980d1abf1cae46a10abf378185f96, type: 2}
   MazeString: 
 --- !u!65 &960622500
