@@ -424,7 +424,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-22</Value>
+										<Value>-17</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -456,11 +456,6 @@
 								<Property Name="Pitch" Type="int32">
 									<ValueList>
 										<Value>2020</Value>
-									</ValueList>
-								</Property>
-								<Property Name="Volume" Type="Real64">
-									<ValueList>
-										<Value>-5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -725,7 +720,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>5</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -755,7 +750,7 @@
 							<PropertyList>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-26</Value>
+										<Value>-13</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
