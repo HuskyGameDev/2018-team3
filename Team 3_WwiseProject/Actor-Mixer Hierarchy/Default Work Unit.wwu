@@ -111,7 +111,7 @@
 								<Property Name="Spatialization" Type="int16" Value="1"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-4</Value>
+										<Value>2</Value>
 									</ValueList>
 									<ModifierList>
 										<ModifierInfo>
@@ -277,6 +277,13 @@
 							</PositioningInfo>
 						</RandomSequenceContainer>
 						<RandomSequenceContainer Name="Footsteps_Dirt" ID="{1E126DF6-0DC7-4639-86F6-D633ECCBA7B6}" ShortID="653551610">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{735C867A-6ADB-4113-A72E-1F871769FE54}"/>
@@ -424,7 +431,7 @@
 								</Property>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>-17</Value>
+										<Value>-7</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -439,8 +446,9 @@
 							<ChildrenList>
 								<AudioFileSource Name="StickSwooshTake01" ID="{8E9C8B77-FF0F-4220-BE0A-E8DBE6FF244C}" ShortID="630086569">
 									<PropertyList>
+										<Property Name="FadeInDuration" Type="Real64" Value="4.00013950892857E-03"/>
 										<Property Name="FadeOutDuration" Type="Real64" Value="6.20021623883929E-02"/>
-										<Property Name="TrimBegin" Type="Real64" Value="4.80016741071429E-02"/>
+										<Property Name="TrimBegin" Type="Real64" Value="4.60016043526786E-02"/>
 										<Property Name="TrimEnd" Type="Real64" Value="0.172005998883928"/>
 									</PropertyList>
 									<Language>SFX</Language>

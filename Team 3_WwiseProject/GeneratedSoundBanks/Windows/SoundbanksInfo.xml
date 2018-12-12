@@ -39,7 +39,7 @@
 				</File>
 				<File Id="491135512" Language="SFX">
 					<ShortName>Button Ring.wav</ShortName>
-					<Path>SFX\Button Ring_453BFE35.wem</Path>
+					<Path>SFX\Button Ring_821E12E1.wem</Path>
 				</File>
 				<File Id="615168643" Language="SFX">
 					<ShortName>TOTS_JungleMusic_V2.wav</ShortName>
@@ -47,7 +47,7 @@
 				</File>
 				<File Id="630086569" Language="SFX">
 					<ShortName>StickSwooshTake01.wav</ShortName>
-					<Path>SFX\StickSwooshTake01_60CB7DBE.wem</Path>
+					<Path>SFX\StickSwooshTake01_FC5BED5D.wem</Path>
 				</File>
 				<File Id="652019439" Language="SFX">
 					<ShortName>Coin Pickup_V1.wav</ShortName>
@@ -79,7 +79,7 @@
 				</File>
 				<File Id="1031954601" Language="SFX">
 					<ShortName>Button Click.wav</ShortName>
-					<Path>SFX\Button Click_D72BF4B3.wem</Path>
+					<Path>SFX\Button Click_826AD5EF.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
