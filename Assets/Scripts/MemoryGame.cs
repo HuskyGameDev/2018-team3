@@ -38,7 +38,7 @@ public class MemoryGame : MonoBehaviour {
             MemTileCollider m = objects[i].GetComponent<MemTileCollider>();
             m.setID(i);
         }
-        resetObjects();
+        setTileMaterial(unlit);
     }
 
     // Update is called once per frame
@@ -80,7 +80,7 @@ public class MemoryGame : MonoBehaviour {
             if (state != State.done)
             {
                 state = State.inactive;
-                resetObjects();
+                setTileMaterial(unlit);
             }
         }
     }
@@ -91,21 +91,35 @@ public class MemoryGame : MonoBehaviour {
         switch(dialogStep)
         {
             case 0:
-                if (!gameManager.IsShowingDialog())
+                if(!gameManager.IsShowingDialog())
                 {
-                    gameManager.ShowDialog("Watch the the order that the tiles light up in. Light them up in the same order to get a key fragment.");
+                    gameManager.ShowDialog("You found the memory puzzle! I'm honestly not sure why this is in a jungle.");
                     dialogStep++;
                 }
                 break;
             case 1:
                 if (!gameManager.IsShowingDialog())
                 {
-                    gameManager.ShowDialog("Screw up and you'll have to start over! This one took me 10 tries.");
+                    gameManager.ShowDialog("That's a question for another time though.");
                     dialogStep++;
                 }
                 break;
             case 2:
-                if(!gameManager.IsShowingDialog())
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("Watch the the order that the tiles light up in. Light them up in the same order to get a key fragment.");
+                    dialogStep++;
+                }
+                break;
+            case 3:
+                if (!gameManager.IsShowingDialog())
+                {
+                    gameManager.ShowDialog("Screw up and you'll have to start over! This one took me 10 tries.");
+                    dialogStep++;
+                }
+                break;
+            case 4:
+                if (!gameManager.IsShowingDialog())
                 {
                     //dialog is done, move to gameplay
                     dialogStep = -1;
@@ -131,7 +145,7 @@ public class MemoryGame : MonoBehaviour {
         if ((Time.realtimeSinceStartup - time) > delay)
         {
             time = Time.realtimeSinceStartup;
-            resetObjects();
+            setTileMaterial(unlit);
             if (pointInOrder >= expectedInputs)
             {
                 pointInOrder = 0;
@@ -160,8 +174,12 @@ public class MemoryGame : MonoBehaviour {
                     expectedInputs++;
                     time = Time.realtimeSinceStartup;
                     state = State.display;
-                    resetObjects();
+                    setTileMaterial(unlit);
                     inputsCount = 0;
+                }
+                else
+                {
+                    setTileMaterial(lit);
                 }
             }
             else
@@ -173,7 +191,7 @@ public class MemoryGame : MonoBehaviour {
                 }
                 time = Time.realtimeSinceStartup;
                 state = State.display;
-                resetObjects();
+                setTileMaterial(unlit);
                 inputsCount = 0;
             }
             
@@ -181,11 +199,11 @@ public class MemoryGame : MonoBehaviour {
     }
 
     /* Helper state managing methods */
-    private void resetObjects()
+    private void setTileMaterial(Material m)
     {
         foreach (GameObject g in objects)
         {
-            g.GetComponent<MeshRenderer>().material = unlit;
+            g.GetComponent<MeshRenderer>().material = m;
         }
     }
 

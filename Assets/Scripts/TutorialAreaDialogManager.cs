@@ -67,7 +67,7 @@ public class TutorialAreaDialogManager : MonoBehaviour
                 if (!gameManager.IsShowingDialog())
                 {
                     gameManager.ShowDialog("Whoops, allow me to introduce myself. I'm Foxtail. Remember me? From all that time ago?");
-                    dialogStep++;
+                    //dialogStep++;
                 }
                 break;
             case 7:
